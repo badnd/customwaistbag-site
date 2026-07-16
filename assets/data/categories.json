@@ -1,0 +1,66 @@
+[
+  {
+    "id": "classic-waist-bags",
+    "name": "Classic Waist Bags",
+    "slug": "classic-waist-bags",
+    "description": "Everyday promotional and retail styles",
+    "featured": true,
+    "image": "assets/images/products/category-classic-waist-bags.svg"
+  },
+  {
+    "id": "running-waist-belts",
+    "name": "Running Waist Belts",
+    "slug": "running-waist-belts",
+    "description": "Lightweight close-to-body sports designs",
+    "featured": true,
+    "image": "assets/images/products/category-running-waist-belts.svg"
+  },
+  {
+    "id": "travel-waist-bags",
+    "name": "Travel Waist Bags",
+    "slug": "travel-waist-bags",
+    "description": "Organized storage for travel essentials",
+    "featured": true,
+    "image": "assets/images/products/category-travel-waist-bags.svg"
+  },
+  {
+    "id": "outdoor-waist-packs",
+    "name": "Outdoor Waist Packs",
+    "slug": "outdoor-waist-packs",
+    "description": "Durable designs for active use",
+    "featured": true,
+    "image": "assets/images/products/category-outdoor-waist-packs.svg"
+  },
+  {
+    "id": "promotional-fanny-packs",
+    "name": "Promotional Fanny Packs",
+    "slug": "promotional-fanny-packs",
+    "description": "Campaign, event and corporate gifting",
+    "featured": true,
+    "image": "assets/images/products/category-promotional-fanny-packs.svg"
+  },
+  {
+    "id": "full-print-waist-bags",
+    "name": "Full Print Waist Bags",
+    "slug": "full-print-waist-bags",
+    "description": "All-over graphics and custom patterns",
+    "featured": true,
+    "image": "assets/images/products/category-full-print-waist-bags.svg"
+  },
+  {
+    "id": "crossbody-waist-bags",
+    "name": "Crossbody Waist Bags",
+    "slug": "crossbody-waist-bags",
+    "description": "Flexible waist and crossbody carry",
+    "featured": true,
+    "image": "assets/images/products/category-crossbody-waist-bags.svg"
+  },
+  {
+    "id": "kids-waist-bags",
+    "name": "Kids Waist Bags",
+    "slug": "kids-waist-bags",
+    "description": "Compact, colorful and brandable designs",
+    "featured": true,
+    "image": "assets/images/products/category-kids-waist-bags.svg"
+  }
+]

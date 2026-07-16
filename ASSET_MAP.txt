@@ -1,0 +1,23 @@
+ORIGINAL FILE	NEW WEBSITE FILE	PURPOSE
+82125000-b1dd-42b0-b57b-c5148c3e75be(1).png	assets/images/quality/why-choose-us.webp	Why Choose Us / capability poster
+bf5cc3f0-06c0-4ae4-b58f-5e8cf47b161a.png	assets/images/process/customization-process.webp	Customization process
+f306b8fe16f571a2165f1cbb5b22696(3).jpg	assets/images/factory/sewing-straps.webp	Component sewing
+7f57809b-7081-4b1e-bfeb-b808758bd0c7(1).png	assets/images/factory/factory-exterior.webp	Factory exterior
+8a2740ce456f4fb3814f572f09a26f9(2).jpg	assets/images/factory/industrial-sewing.webp	Industrial sewing
+12 (1)(2).png	assets/images/customization/custom-logo-methods.webp	Custom logo methods
+12 (3)(3).png	assets/images/quality/customer-testimonials.webp	Customer feedback
+12 (5)(3).png	assets/images/quality/faq-guide.webp	FAQ guide
+12 (9)(3).png	assets/images/customization/pantone-color-guide.webp	Pantone color guide
+14baf6d4945acfa3973455b48917e564(2).jpg	assets/images/customization/custom-bags-full-print.webp	Full print banner and hero waist bag crop
+26fd6cd2bd1a23982eba94a04e54a06(1).jpg	assets/images/factory/sewing-brown-bag.webp	Bag sewing detail
+94c756ad-d200-4652-b5f8-20526759c1b9.png	assets/images/factory/sample-room.webp	Sample / pattern room
+326e8b6c98043f81b4b4433c06212af(2).jpg	assets/images/factory/worker-sewing.webp	Worker sewing
+微信图片_20230301134414.jpg	assets/images/factory/production-line.webp	Production line
+14baf6d4945acfa3973455b48917e564(2).jpg	assets/images/hero/custom-waist-bag-hero.webp	Cropped waist bag hero visual
+3bcb76832855c1b482570f76652ac21e(4).jpg	assets/images/brand/nameer-logo-header.png	Official horizontal Nameer header logo
+微信视频2026-07-16_144408_080.mp4	assets/videos/factory-video-01.mp4	Factory / production video
+微信视频2026-07-16_144408_080.mp4	assets/videos/posters/factory-video-01-poster.jpg	Video poster
+微信视频2026-07-16_144452_607.mp4	assets/videos/production-video-01.mp4	Factory / production video
+微信视频2026-07-16_144452_607.mp4	assets/videos/posters/production-video-01-poster.jpg	Video poster
+微信视频2026-07-16_144534_012.mp4	assets/videos/manufacturing-video-01.mp4	Factory / production video
+微信视频2026-07-16_144534_012.mp4	assets/videos/posters/manufacturing-video-01-poster.jpg	Video poster

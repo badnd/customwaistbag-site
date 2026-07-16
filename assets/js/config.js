@@ -1,0 +1,1 @@
+window.SITE_CONFIG={domain:"https://www.customwaistbag.com",company:"Tianjin Junyi Premium Trading Co.,Ltd.",email:"annawei@nameerbag.com",whatsapp:"8615102249548",whatsappDisplay:"+86 151 0224 9548",wechat:"15102249548"};

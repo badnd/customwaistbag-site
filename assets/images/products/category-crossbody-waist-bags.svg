@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f6f3ef"/><stop offset="1" stop-color="#ece7e1"/></linearGradient></defs>
+<rect width="900" height="650" fill="url(#g)"/>
+<path d="M210 290 Q225 210 330 210 H575 Q680 210 695 290 L730 465 Q740 520 680 530 H220 Q160 520 170 465 Z" fill="#202020"/>
+<path d="M300 230 Q320 130 450 130 Q580 130 600 230" fill="none" stroke="#eb5b20" stroke-width="28" stroke-linecap="round"/>
+<rect x="300" y="320" width="300" height="92" rx="34" fill="#eb5b20"/>
+<text x="450" y="378" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">YOUR LOGO</text>
+<circle cx="770" cy="92" r="48" fill="#eb5b20"/>
+<text x="60" y="590" fill="#242424" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700">Crossbody Waist Bags</text>
+</svg>
