@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "host",
+          "value": "customwaistbag.com"
+        }
+      ],
+      "destination": "https://www.customwaistbag.com/:path*",
+      "permanent": true
+    }
+  ]
+}
