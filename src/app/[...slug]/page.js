@@ -1,0 +1,37 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+
+const media = 'https://images.customwaistbag.com/assets';
+const pages = {
+  about: {
+    title: 'A Three-Month Sampling Story',
+    intro: 'One 1,000-piece first order taught us what design partnership means in practice.',
+    body: <>
+      <p>A US outdoor streetwear brand came to us with a waist bag idea and a 1,000-piece first order. The quantity was clear; the product was not yet settled. Colour, webbing, zipper pull and logo placement all needed to work together.</p>
+      <p>That one project went through sampling work over three months. It was not a promise that every project takes three months, and it was not a negative story. It was one occasion when careful re-sampling was the right investment for the product.</p>
+      <p>The experience shaped this site&apos;s focus: waist bag structure and patient sampling support for buyers who need a factory to stay engaged while the design becomes production-ready.</p>
+      <h2>One production team, two trading entities</h2>
+      <p>Tianjin Nameer International Trade Co., Ltd. and Tianjin Junyi Premium Trading Co., Ltd. share the same Baigou factory area and production team. The factory area includes multiple buildings. The manufacturing history is described as 20+ years making bags, not as either company&apos;s registration date.</p>
+      <p>The sewing workshop covers 3,000 sqm. The team has 35 production members and 15 sales and support members, with annual production of 200,000+ units and exports to 10+ markets.</p>
+    </>
+  },
+  factory: {
+    title: 'Waist Bag Production, Shown Honestly',
+    intro: 'We show the production views we have, and do not assign missing cutting or packing photos to the wrong stage.',
+    body: <div className="grid three"><div className="card media-card"><img src={`${media}/images/factory/production-line.webp`} alt="Production line inside the bag sewing workshop" /><div className="copy"><h3>Production line</h3><p>A verified workshop view from the approved CWB media set.</p></div></div><div className="card media-card"><video controls poster={`${media}/videos/posters/manufacturing-video-01-poster.jpg`}><source src={`${media}/videos/manufacturing-video-01.mp4`} /></video><div className="copy"><h3>Small-panel sewing</h3><p>An operator sewing a small olive-colour bag panel.</p></div></div><div className="card media-card"><video controls poster={`${media}/videos/posters/production-video-01-poster.jpg`}><source src={`${media}/videos/production-video-01.mp4`} /></video><div className="copy"><h3>Edge stitching</h3><p>A close production view of waist bag edge stitching.</p></div></div></div>
+  },
+  'custom-logo': {
+    title: 'Custom Logo and Trim Options', intro: 'Choose a method that fits the artwork, material and intended use.',
+    body: <><div className="grid three">{['Screen printing','Embroidery','Rubber patch','Woven label','Private label','Heat transfer','Leather patch','Metal badge','Custom zipper pull','Pantone custom dyeing'].map(x=><div className="card" key={x}><h3>{x}</h3><p>Available for review during specification and sampling.</p></div>)}</div><p><Link className="button" href="/contact">Request a Free Logo Mockup</Link></p></>
+  },
+  'full-print': { title: 'Full-Print Waist Bag Development', intro: 'Artwork, panel placement and construction are reviewed together before sampling.', body: <><p>Full-print work begins with the bag shape, print artwork and seam positions. Anna will confirm what source artwork is needed for the selected style.</p><img src={`${media}/images/process/customization-process.webp`} alt="Custom bag development process overview" /><p>This overview is shown as a general process reference. It is not used to claim that every pictured panel represents a separately photographed cutting or packing stage.</p></> },
+  'oem-odm': { title: 'OEM and ODM Sampling Process', intro: 'A practical path from reference to approved waist bag sample.', body: <ol><li>Send a reference, dimensions, intended use and target quantity.</li><li>Confirm material, colour, webbing, zipper pull and logo method.</li><li>Review the free logo mockup and quotation.</li><li>Produce the custom sample in 7-15 days after details are confirmed.</li><li>Approve the sample and begin 15-30 day bulk production.</li></ol> },
+  faq: { title: 'Waist Bag Ordering FAQ', intro: 'Specific answers for sourcing and planning.', body: <div className="faq">{[['Can I start with 50 pcs?','Yes. MOQ tiers start at 50 pcs, with 50/100/300/500/1,000/3,000+ options. Final MOQ depends on the design.'],['How long is sampling?','Normally 7-15 days after details are confirmed.'],['How long is bulk production?','Normally 15-30 days after approval.'],['Is the sample fee refundable?','For 1,000+ pcs it is refundable; for 500-1,000 pcs it can be discussed.'],['Do you publish prices?','No. Each project is quoted according to its confirmed specification.']].map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div> },
+  contact: { title: 'Send Your Waist Bag Brief', intro: 'Anna Wei will review your reference, quantity and customization details.', body: <><div className="card"><p><strong>Email:</strong> <a href="mailto:annawei@nameerbag.com">annawei@nameerbag.com</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/8615102249548">008615102249548</a></p><p><strong>WeChat:</strong> 15102249548</p></div><form className="form-grid" action="mailto:annawei@nameerbag.com" method="post" encType="text/plain"><label>Name<input name="name" required /></label><label>Email<input name="email" type="email" required /></label><label className="wide">Target quantity<input name="quantity" /></label><label className="wide">Project details<textarea name="details" required /></label><button className="button wide" type="submit">Open Email to Send</button></form></> },
+  'privacy-policy': { title: 'Privacy Policy', intro: 'How inquiry information is handled.', body: <><p>Information submitted by email or WhatsApp is used to respond to your sourcing request, prepare quotations and discuss production details.</p><p>We do not publish buyer names, company names or inquiry details as testimonials without permission.</p></> }
+};
+
+export function generateStaticParams(){return Object.keys(pages).map(slug=>({slug:[slug]}));}
+export async function generateMetadata({params}){const {slug}=await params;const key=slug?.join('/');const page=pages[key];if(!page)return{};const url=`https://www.customwaistbag.com/${key}`;return{title:page.title,description:page.intro,alternates:{canonical:url,languages:{en:url,ru:`https://www.customwaistbag.com/ru/${key}`,'x-default':url}}};}
+
+export default async function ContentPage({params}){const {slug}=await params;const key=slug?.join('/');const page=pages[key];if(!page)notFound();return <><section className="page-hero"><div className="shell"><div className="eyebrow">Custom Waist Bag</div><h1>{page.title}</h1><p className="lead">{page.intro}</p></div></section><section className="section"><div className="shell rich">{page.body}</div></section></>;}

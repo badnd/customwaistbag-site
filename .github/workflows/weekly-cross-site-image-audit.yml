@@ -1,0 +1,58 @@
+name: Weekly cross-site perceptual image audit
+
+on:
+  schedule:
+    - cron: '20 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cross-site-image-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check out Nameerbag source inventory
+        uses: actions/checkout@v4
+        with:
+          repository: badnd/nameerbag-site
+          path: .ocr-source/nameerbag
+      - name: Check out Junyibags source inventory
+        uses: actions/checkout@v4
+        with:
+          repository: badnd/junyibags-site
+          path: .ocr-source/junyibags
+      - name: Check out Custom Backpack Factory source inventory
+        uses: actions/checkout@v4
+        with:
+          repository: badnd/custombackpackfactory-site
+          path: .ocr-source/custombackpackfactory
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Run upload preflight and OCR fault injection
+        run: |
+          npm run dedup:lint
+          npm run ocr:test-injection
+      - name: Scan all four production sites with pHash and dHash
+        run: npm run images:audit
+      - name: Scan new or changed source and live image hashes with OCR
+        run: >-
+          node scripts/image-ocr-guard.mjs --online
+          --source-root public
+          --source-root .ocr-source/nameerbag/public
+          --source-root .ocr-source/junyibags/public
+          --source-root .ocr-source/custombackpackfactory/public
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cross-site-image-audit
+          path: |
+            artifacts/image-perceptual-audit/
+            artifacts/image-ocr-audit/
+          retention-days: 30
