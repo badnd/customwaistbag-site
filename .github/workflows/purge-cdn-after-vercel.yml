@@ -1,0 +1,39 @@
+name: Purge Cloudflare CDN after Vercel production deploy
+
+on:
+  deployment_status:
+
+jobs:
+  purge-cdn:
+    if: >
+      github.event.deployment_status.state == 'success' &&
+      (github.event.deployment.environment == 'Production' || github.event.deployment.environment == 'production')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger production CDN purge
+        shell: bash
+        run: |
+          set +e
+          PURGE_URL="https://www.customwaistbag.com/api/purge-cdn"
+          echo "Triggering CDN purge: $PURGE_URL"
+
+          if [ -z "${{ secrets.CDN_PURGE_SECRET }}" ]; then
+            echo "Missing required GitHub secret: CDN_PURGE_SECRET"
+            exit 1
+          fi
+
+          for attempt in 1 2 3; do
+            http_code="$(curl -sS -L -X POST "$PURGE_URL" -H "Authorization: Bearer ${{ secrets.CDN_PURGE_SECRET }}" -o purge-response.json -w "%{http_code}")"
+            echo "Attempt $attempt returned HTTP $http_code"
+            cat purge-response.json || true
+            echo
+
+            if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 300 ]; then
+              exit 0
+            fi
+
+            sleep 10
+          done
+
+          echo "CDN purge callback failed after retries; deployment remains successful."
+          exit 0

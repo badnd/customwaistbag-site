@@ -1,0 +1,26 @@
+{
+  "name": "customwaistbag-site",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seo:audit": "node scripts/seo-audit/index.mjs",
+    "dedup:lint": "node scripts/dedup-upload-lint.mjs --self-test && node scripts/image-ocr-guard.mjs --preflight",
+    "ocr:guard": "node scripts/image-ocr-guard.mjs --preflight",
+    "images:audit": "node scripts/image-perceptual-audit.mjs --scan",
+    "cdn:purge": "node scripts/purge-cdn-cache.mjs"
+  },
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "cheerio": "^1.1.2",
+    "tesseract.js": "^7.0.0"
+  }
+}

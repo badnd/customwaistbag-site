@@ -1,0 +1,20 @@
+{
+  "sites": [
+    { "name": "Custom Waist Bag", "origin": "https://www.customwaistbag.com", "multilingualPaths": ["/", "/custom-logo", "/full-print", "/oem-odm", "/factory", "/about", "/faq", "/contact"] }
+  ],
+  "runtime": { "concurrencyPerSite": 4, "timeoutMs": 15000, "retries": 2, "sitemapDeltaWarningPercent": 20, "sitemapDeltaMinimumUrls": 5 },
+  "probes": { "uppercasePath": "/Factory" },
+  "rules": {
+    "contacts": { "email": "annawei@nameerbag.com", "whatsapp": "008615102249548", "wechat": "15102249548", "person": "Anna Wei" },
+    "approvedFactoryFacts": {
+      "years": [20], "squareMeters": [3000], "people": [15, 35, 50], "annualCapacity": [200000], "exportMarkets": [10],
+      "locations": ["Baigou", "Tianjin"],
+      "companyNames": ["Tianjin Nameer International Trade Co., Ltd.", "Tianjin Junyi Premium Trading Co., Ltd."]
+    },
+    "pricePatterns": ["\\$\\s*\\d+(?:\\.\\d{1,2})?", "\\bUSD\\s*\\d+(?:\\.\\d{1,2})?", "\\b(?:per[- ]unit|unit) price\\b", "\\btiered quotation\\b"],
+    "moqRangePatterns": ["\\bMOQ.{0,35}\\d[\\d,]*\\s*(?:-|to)\\s*\\d[\\d,]*\\s*(?:pcs|pieces|units)\\b"],
+    "unauthorizedCertificationPatterns": ["\\b(?:BSCI|GRS|ISO|FSC|SGS|BRC)\\b", "\\bT[UV]V\\b", "Alibaba Verified", "Global Recycled Standard", "Business Social Compliance Initiative"],
+    "certificationWhitelists": [],
+    "contentWhitelists": ["500-1,000 pcs", "MOQ from 50 pcs", "MOQ tiers from 50 pcs", "50/100/300/500/1,000/3,000+"]
+  }
+}

@@ -1,0 +1,13 @@
+.next
+node_modules
+out
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.vercel
+.seo-audit-state/
+artifacts/seo-audit/
+artifacts/
+*.log

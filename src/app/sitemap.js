@@ -1,0 +1,2 @@
+const paths=['','about','factory','custom-logo','full-print','oem-odm','faq','contact','privacy-policy'];
+export default function sitemap(){const base='https://www.customwaistbag.com';return paths.flatMap(path=>[{url:`${base}/${path}`.replace(/\/$/,path?'':'/'),changeFrequency:path?'monthly':'weekly',priority:path?0.7:1},{url:`${base}/ru${path?`/${path}`:''}`,changeFrequency:path?'monthly':'weekly',priority:path?0.6:0.8}]);}

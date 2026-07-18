@@ -1,0 +1,25 @@
+{
+  "version": "2026-07-16.1",
+  "approvedClaims": [
+    "MOQ from 50 pcs",
+    "50 / 100 / 300 / 500 / 1,000 / 3,000+",
+    "20+ Years in Bag Manufacturing",
+    "3,000 sqm",
+    "annawei@nameerbag.com",
+    "008615102249548",
+    "15102249548"
+  ],
+  "rules": [
+    { "id": "moq-old-fixed", "label": "Old fixed MOQ", "pattern": "\\bMOQ\\s*(?:100|300)\\s*(?:PCS|PIECES)?\\b" },
+    { "id": "moq-range", "label": "Disallowed MOQ range", "pattern": "\\b(?:MOQ\\s*)?\\d{2,4}\\s*[-–—]\\s*\\d{2,4}\\s*(?:PCS|PIECES)\\b" },
+    { "id": "years-old", "label": "Old manufacturing-years claim", "pattern": "(?:\\b15\\s*\\+|\\b15\\s*(?:YEARS?|YRS?)\\b)" },
+    { "id": "company-founded-year", "label": "Disallowed company founding-year claim", "pattern": "\\b(?:SINCE\\s+2011|FOUNDED\\s+IN\\s+2005|ESTABLISHED\\s+(?:IN\\s+)?2005)\\b" },
+    { "id": "area-old", "label": "Old workshop-area claim", "pattern": "\\b2[,.]?000\\s*(?:SQM|M[2Z]?|M²|SQUARE\\s*METERS?)\\b" },
+    { "id": "public-price", "label": "Public numeric price", "pattern": "(?:[$€£¥￥]\\s*\\d+(?:[.,]\\d+)?|\\b(?:USD|EUR|GBP|CNY|RMB)\\s*\\d+(?:[.,]\\d+)?)" },
+    { "id": "certification", "label": "Prohibited certification claim", "pattern": "\\b(?:BSCI|GRS|ISO|FSC|SGS|BRC|TUV|TÜV)\\b|ALIBABA\\s+VERIFIED" }
+  ],
+  "approvedContacts": {
+    "emails": ["annawei@nameerbag.com"],
+    "phones": ["008615102249548", "15102249548"]
+  }
+}
