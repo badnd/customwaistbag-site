@@ -12,7 +12,14 @@ export const metadata = {
   description: 'Waist bag specialist for private-label buyers, with MOQ tiers from 50 pcs, 7-15 day sampling and OEM/ODM support.',
   icons: { icon: '/favicon-32.png', apple: '/favicon-192.png' },
   openGraph: { type: 'website', siteName: 'Custom Waist Bag', images: ['https://images.customwaistbag.com/assets/videos/posters/production-video-01-poster.jpg'] },
-  twitter: { card: 'summary_large_image', images: ['https://images.customwaistbag.com/assets/videos/posters/production-video-01-poster.jpg'] }
+  twitter: { card: 'summary_large_image', images: ['https://images.customwaistbag.com/assets/videos/posters/production-video-01-poster.jpg'] },
+  verification: {
+    google: 'xAyodnH7oiV2NT_wQ7lDveoeLXTRAjffxoK5bzwXEJg',
+    other: {
+      'msvalidate.01': 'AD12B57AA450C181C4A8D6F90403CA06',
+      'yandex-verification': 'a672f5d50f10147b'
+    }
+  }
 };
 
 const nav = [
