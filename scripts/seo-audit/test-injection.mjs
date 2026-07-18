@@ -15,7 +15,7 @@ const server = http.createServer((request, response) => {
     response.end(`<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${origin}/</loc></url></urlset>`);
   } else if (request.url === "/") {
     response.writeHead(200, { "content-type": "text/html" });
-    response.end(`<!doctype html><html lang="en"><head><title>Fixture</title><meta name="description" content="fixture"><link rel="canonical" href="${origin}/"><link rel="alternate" hreflang="en" href="${origin}/"><link rel="alternate" hreflang="ru" href="${origin}/"><link rel="alternate" hreflang="x-default" href="${origin}/"></head><body><a href="/missing">Broken fixture link</a><img src="/broken-image.jpg" alt="Broken fixture image"><p>Unit price: $19.99. MOQ 50-300 pcs.</p><p>annawei@nameerbag.com 008615102249548 15102249548 Anna Wei</p></body></html>`);
+    response.end(`<!doctype html><html lang="en"><head><title>Fixture</title><meta name="description" content="fixture"><link rel="canonical" href="${origin}/"><link rel="alternate" hreflang="en" href="${origin}/"><link rel="alternate" hreflang="ru" href="${origin}/"><link rel="alternate" hreflang="x-default" href="${origin}/"></head><body><a href="/missing">Broken fixture link</a><img src="/broken-image.jpg" alt="Broken fixture image"><video><source src="/fixture-video.mp4" type="video/mp4"></video><p>Unit price: $19.99. MOQ 50-300 pcs.</p><p>annawei@nameerbag.com 008615102249548 15102249548 Anna Wei</p></body></html>`);
   } else if (request.url === "/robots.txt") {
     response.writeHead(200, { "content-type": "text/plain" }); response.end(`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
   } else { response.writeHead(404); response.end("missing"); }
@@ -32,8 +32,9 @@ server.close();
 const report = await fs.readFile(path.join(temp, "report/latest.md"), "utf8");
 const expected = ["LINK_BROKEN", "IMAGE_UNAVAILABLE", "PRICE_PUBLIC", "MOQ_RANGE"];
 const missing = expected.filter((code) => !report.includes(code));
-if (exitCode === 0 || missing.length) {
-  console.error(`Fault injection failed. Missing detections: ${missing.join(", ") || "none"}; audit exit=${exitCode}`);
+const videoMisclassified = report.includes("fixture-video.mp4");
+if (exitCode === 0 || missing.length || videoMisclassified) {
+  console.error(`Fault injection failed. Missing detections: ${missing.join(", ") || "none"}; video misclassified=${videoMisclassified}; audit exit=${exitCode}`);
   process.exitCode = 1;
 } else {
   console.log(`Fault injection passed: ${expected.join(", ")}`);
