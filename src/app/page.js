@@ -1,5 +1,16 @@
 import Link from 'next/link';
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://www.customwaistbag.com/',
+    languages: {
+      en: 'https://www.customwaistbag.com/',
+      ru: 'https://www.customwaistbag.com/ru',
+      'x-default': 'https://www.customwaistbag.com/'
+    }
+  }
+};
+
 const media = 'https://images.customwaistbag.com/assets';
 const faqs = [
   ['What is your minimum order quantity?', 'MOQ tiers start from 50 pcs. Available tiers are 50, 100, 300, 500, 1,000 and 3,000+ pcs. Final MOQ depends on style, fabric and logo method.'],

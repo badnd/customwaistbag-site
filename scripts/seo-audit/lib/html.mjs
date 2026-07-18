@@ -27,7 +27,7 @@ export function parseHtml(body, url) {
       } catch {}
     }
   };
-  raw("img[src], img[srcset], source[src], source[srcset]").each((_, element) => {
+  raw("img[src], img[srcset], picture source[src], picture source[srcset]").each((_, element) => {
     for (const attribute of ["src", "srcset"]) addImage(raw(element).attr(attribute), element.tagName?.toLowerCase() || "media", attribute);
   });
   raw('link[rel="preload"][as="image"][href]').each((_, element) => addImage(raw(element).attr("href"), "link", "href"));
