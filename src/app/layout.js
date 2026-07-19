@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import { FloatingContactBall } from '../components/FloatingContactBall';
+import { SiteNavigation } from '../components/SiteNavigation';
 
 const GA4 = process.env.NEXT_PUBLIC_GA4_ID;
 
@@ -35,7 +36,8 @@ const nav = [
 
 export default async function RootLayout({ children }) {
   const requestHeaders = await headers();
-  const lang = (requestHeaders.get('x-pathname') || '').startsWith('/ru') ? 'ru' : 'en';
+  const pathname = requestHeaders.get('x-pathname') || '';
+  const lang = pathname === '/ru' || pathname.startsWith('/ru/') ? 'ru' : 'en';
   return (
     <html lang={lang}>
       <body>
@@ -48,14 +50,7 @@ export default async function RootLayout({ children }) {
             s.src='https://www.googletagmanager.com/gtag/js?id=${GA4}';document.head.appendChild(s);
           },1200);
         `}</Script> : null}
-        <header className="site-header">
-          <div className="shell nav-row">
-            <Link className="wordmark" href="/">Custom Waist Bag</Link>
-            <nav aria-label="Primary navigation"><details className="product-nav"><summary>Products</summary><div><Link href="/running-waist-bags">Running & Slim</Link><Link href="/everyday-waist-bags">Everyday</Link><Link href="/crossbody-waist-bags">Crossbody & Anti-Theft</Link></div></details>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</nav>
-            <div className="nav-actions"><Link href="/ru">RU</Link><Link className="button small" href="/contact">Get a Quote</Link></div>
-            <details className="mobile-menu"><summary aria-label="Open navigation">&#9776;</summary><div><Link href="/running-waist-bags">Running & Slim Waist Belts</Link><Link href="/everyday-waist-bags">Everyday Waist Bags</Link><Link href="/crossbody-waist-bags">Crossbody & Anti-Theft</Link>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}<Link href="/contact">Get a Quote</Link></div></details>
-          </div>
-        </header>
+        <header className="site-header"><SiteNavigation locale={lang} /></header>
         <main>{children}</main>
         <footer>
           <div className="shell footer-grid">

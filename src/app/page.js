@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { productCategories, productsForCategory } from '../data/catalogData';
 
 export const metadata = {
   alternates: {
@@ -31,6 +32,8 @@ const schema = [
 ];
 
 const capabilities = ['Screen printing','Embroidery','Rubber patch','Woven label','Private label','Heat transfer','Leather patch','Metal badge','Custom zipper pull','Pantone custom dyeing'];
+const featuredCategories = productCategories.map((category) => ({ ...category, representative: productsForCategory(category)[0] }));
+
 const metrics = [['20+ Years','Bag manufacturing'],['3,000 sqm','Sewing workshop'],['50 People','35 production + 15 support'],['200,000+','Units produced annually'],['10+ Markets','Export experience'],['50 pcs','MOQ entry tier']];
 
 export default function HomePage() {
@@ -42,11 +45,12 @@ export default function HomePage() {
         <div className="eyebrow">Waist bag specialist and sampling partner</div>
         <h1>We Keep Refining the Sample Until the Waist Bag Feels Right</h1>
         <p className="lead">Colour, webbing, zipper pull and logo placement are reviewed as one product, not separate checkboxes.</p>
-        <div className="actions"><Link className="button" href="/contact">Request a Quote</Link><Link className="button secondary" href="/about">Read Our Sampling Story</Link></div>
         <div className="proof"><span>MOQ from 50 pcs*</span><span>Free Logo Mockup</span><span>Samples in 7-15 Days</span><span>20+ Years Making Bags</span><span>Waist Bags Only - All We Do</span></div>
-        <p><small>* Final MOQ depends on style, fabric and logo method. Anna will confirm in your quotation.</small></p>
+        <p className="hero-note"><small>* Final MOQ depends on style, fabric and logo method. Anna will confirm in your quotation.</small></p>
+        <div className="actions"><Link className="button" href="/contact">Request a Quote</Link><Link className="button secondary" href="/about">Read Our Sampling Story</Link></div>
       </div>
     </section>
+    <section className="section home-catalog"><div className="shell"><div className="section-head"><div className="eyebrow">Product categories</div><h2>Choose the waist bag structure that fits your use</h2><p>Seven current models are organized by carry style, with complete specifications and inquiry-only pricing on each product page.</p></div><div className="home-category-grid">{featuredCategories.map((category) => <article className="home-category-card" key={category.slug}><Link className="home-category-media" href={`/${category.slug}`}><img src={category.representative.gallery[0]} alt={`${category.title} representative model ${category.representative.model}`} loading="lazy" width="1122" height="1402" /></Link><div className="home-category-copy"><p className="product-model">{category.representative.model}</p><h3><Link href={`/${category.slug}`}>{category.title}</Link></h3><p>{category.description}</p><Link className="button secondary" href={`/${category.slug}`}>Browse Category</Link></div></article>)}</div></div></section>
     <section className="section"><div className="shell"><div className="metrics">{metrics.map(([a,b]) => <div className="metric" key={a}><strong>{a}</strong><span>{b}</span></div>)}</div></div></section>
     <section className="section alt"><div className="shell"><div className="section-head"><div className="eyebrow">Custom details</div><h2>One waist bag, ten ways to make it yours</h2><p>These are the customization capabilities confirmed for this production team.</p></div><div className="grid four">{capabilities.map(x => <div className="card" key={x}><h3>{x}</h3><p>Reviewed against your reference, artwork and target use before sampling.</p></div>)}</div></div></section>
     <section className="section"><div className="shell story"><div><div className="eyebrow">Real production footage</div><h2>Three views of the work</h2><p>Material laying, small-panel sewing and edge stitching show the actual steps available in the approved workshop footage.</p><Link className="button" href="/factory">See Factory Capability</Link></div><div className="grid three"><div className="card media-card"><video controls preload="metadata" poster={`${media}/videos/posters/factory-video-01-poster.jpg`}><source src={`${media}/videos/factory-video-01.mp4`} /></video><div className="copy"><strong>Material laying</strong></div></div><div className="card media-card"><video controls preload="metadata" poster={`${media}/videos/posters/manufacturing-video-01-poster.jpg`}><source src={`${media}/videos/manufacturing-video-01.mp4`} /></video><div className="copy"><strong>Small-panel sewing</strong></div></div><div className="card media-card"><video controls preload="metadata" poster={`${media}/videos/posters/production-video-01-poster.jpg`}><source src={`${media}/videos/production-video-01.mp4`} /></video><div className="copy"><strong>Waist bag edge stitching</strong></div></div></div></div></section>

@@ -3,12 +3,19 @@ import { mapLimit } from "../lib/context.mjs";
 function excerpt(text, index, length) { return text.slice(Math.max(0, index - 70), Math.min(text.length, index + length + 70)); }
 
 export async function run(ctx) {
-  ctx.mark(22, 23, 24, 25, 26);
+  ctx.mark(22, 23, 24, 25, 26, 33);
   const rules = ctx.config.rules;
   const aggregate = [];
   await mapLimit(ctx.urls, ctx.config.runtime.concurrencyPerSite, async (url) => {
     const { response, html } = await ctx.page(url);
     const text = html.text;
+    const pathname = new URL(url).pathname;
+    if (pathname === '/ru' || pathname.startsWith('/ru/')) {
+      const corruption = text.match(/\?{3,}|�|(?:Ã|Â|Ð|Ñ)[\p{L}\p{N}]/u);
+      if (corruption) ctx.add(33, "critical", "RU_ENCODING_CORRUPTION", "Russian page contains replacement characters or mojibake", { url, actual: excerpt(text, corruption.index, corruption[0].length) });
+      const cyrillicCount = (text.match(/[А-Яа-яЁё]/g) || []).length;
+      if (cyrillicCount < 20) ctx.add(33, "critical", "RU_TEXT_MISSING", "Russian page has too little Cyrillic content", { url, actual: cyrillicCount + " Cyrillic characters" });
+    }
     aggregate.push(response.body);
     const scrubbed = rules.contentWhitelists.reduce((value, allowed) => value.replaceAll(allowed, ""), text);
     for (const source of rules.pricePatterns) {

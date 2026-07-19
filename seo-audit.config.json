@@ -1,20 +1,97 @@
 {
   "sites": [
-    { "name": "Custom Waist Bag", "origin": "https://www.customwaistbag.com", "multilingualPaths": ["/", "/custom-logo", "/full-print", "/oem-odm", "/factory", "/about", "/faq", "/contact"] }
+    {
+      "name": "Custom Waist Bag",
+      "origin": "https://www.customwaistbag.com",
+      "multilingualPaths": [
+        "/",
+        "/about",
+        "/factory",
+        "/custom-logo",
+        "/full-print",
+        "/oem-odm",
+        "/faq",
+        "/contact",
+        "/privacy-policy",
+        "/running-waist-bags",
+        "/everyday-waist-bags",
+        "/crossbody-waist-bags",
+        "/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "/running-waist-bags/ydjl2023-running-waist-bag",
+        "/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "/crossbody-waist-bags/ydjl2317-water-resistant-waist-bag"
+      ]
+    }
   ],
-  "runtime": { "concurrencyPerSite": 4, "timeoutMs": 15000, "retries": 2, "sitemapDeltaWarningPercent": 20, "sitemapDeltaMinimumUrls": 5 },
-  "probes": { "uppercasePath": "/Factory" },
+  "runtime": {
+    "concurrencyPerSite": 4,
+    "timeoutMs": 15000,
+    "retries": 2,
+    "sitemapDeltaWarningPercent": 20,
+    "sitemapDeltaMinimumUrls": 5
+  },
+  "probes": {
+    "uppercasePath": "/Factory"
+  },
   "rules": {
-    "contacts": { "email": "annawei@nameerbag.com", "whatsapp": "008615102249548", "wechat": "15102249548", "person": "Anna Wei" },
-    "approvedFactoryFacts": {
-      "years": [20], "squareMeters": [3000], "people": [15, 35, 50], "annualCapacity": [200000], "exportMarkets": [10],
-      "locations": ["Baigou", "Tianjin"],
-      "companyNames": ["Tianjin Nameer International Trade Co., Ltd.", "Tianjin Junyi Premium Trading Co., Ltd."]
+    "contacts": {
+      "email": "annawei@nameerbag.com",
+      "whatsapp": "008615102249548",
+      "wechat": "15102249548",
+      "person": "Anna Wei"
     },
-    "pricePatterns": ["\\$\\s*\\d+(?:\\.\\d{1,2})?", "\\bUSD\\s*\\d+(?:\\.\\d{1,2})?", "\\b(?:per[- ]unit|unit) price\\b", "\\btiered quotation\\b"],
-    "moqRangePatterns": ["\\bMOQ.{0,35}\\d[\\d,]*\\s*(?:-|to)\\s*\\d[\\d,]*\\s*(?:pcs|pieces|units)\\b"],
-    "unauthorizedCertificationPatterns": ["\\b(?:BSCI|GRS|ISO|FSC|SGS|BRC)\\b", "\\bT[UV]V\\b", "Alibaba Verified", "Global Recycled Standard", "Business Social Compliance Initiative"],
+    "approvedFactoryFacts": {
+      "years": [
+        20
+      ],
+      "squareMeters": [
+        3000
+      ],
+      "people": [
+        15,
+        35,
+        50
+      ],
+      "annualCapacity": [
+        200000
+      ],
+      "exportMarkets": [
+        10
+      ],
+      "locations": [
+        "Baigou",
+        "Tianjin"
+      ],
+      "companyNames": [
+        "Tianjin Nameer International Trade Co., Ltd.",
+        "Tianjin Junyi Premium Trading Co., Ltd."
+      ]
+    },
+    "pricePatterns": [
+      "\\$\\s*\\d+(?:\\.\\d{1,2})?",
+      "\\bUSD\\s*\\d+(?:\\.\\d{1,2})?",
+      "\\b(?:per[- ]unit|unit) price\\b",
+      "\\btiered quotation\\b"
+    ],
+    "moqRangePatterns": [
+      "\\bMOQ.{0,35}\\d[\\d,]*\\s*(?:-|to)\\s*\\d[\\d,]*\\s*(?:pcs|pieces|units)\\b"
+    ],
+    "unauthorizedCertificationPatterns": [
+      "\\b(?:BSCI|GRS|ISO|FSC|SGS|BRC)\\b",
+      "\\bT[UV]V\\b",
+      "Alibaba Verified",
+      "Global Recycled Standard",
+      "Business Social Compliance Initiative"
+    ],
     "certificationWhitelists": [],
-    "contentWhitelists": ["500-1,000 pcs", "MOQ from 50 pcs", "MOQ tiers from 50 pcs", "50/100/300/500/1,000/3,000+"]
+    "contentWhitelists": [
+      "500-1,000 pcs",
+      "MOQ from 50 pcs",
+      "MOQ tiers from 50 pcs",
+      "50/100/300/500/1,000/3,000+"
+    ]
   }
 }
