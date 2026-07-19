@@ -1,4 +1,665 @@
-{
-  "version": "2026-07-17.1",
-  "exemptions": []
+﻿{
+    "version":  "2026-07-18.1",
+    "exemptions":  [
+                       {
+                           "source":  "products/ydjl1923/0c052e08.webp",
+                           "sha256":  "4f44bfcba444b3c3c94034298d426f38662a72f17e4a2afff6cd21d85f4fa24a",
+                           "phash":  "580bc7e4c7d1b512",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl1923/1ae92bac.webp",
+                           "sha256":  "89244d837663543ef09d8d137d0b159d79d63bbe1728b63469c3ea65b5983427",
+                           "phash":  "5ae7003fe0c39eb0",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl1923/480b6864.webp",
+                           "sha256":  "1b7deccfbe23bec7b3914294fa36978451f88570ee01aa38e7a351c39b45b9ae",
+                           "phash":  "75a6cd5a9448cce8",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl1923/6b2bf23a.webp",
+                           "sha256":  "9a9f8998aa5a9151ec07c8aac6f51f1ffb15c1ffe0afff23fb302285ce76e404",
+                           "phash":  "73e082fe87d0d0d8",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl1923/808d3cfb.webp",
+                           "sha256":  "c88d76a631badcfce25b989fbf5d00d4092c625e97bdebc1c7cb6fee898b2062",
+                           "phash":  "6bc3141cc927ced8",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl1923/9b0c028a.webp",
+                           "sha256":  "d1a605f46320df6555d3b22c1b55fb1bcee5745a2f9cd369b3e606e45e2811b7",
+                           "phash":  "4ad711389626f6f0",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/0fe29834.webp",
+                           "sha256":  "41c81dc2ca6de469f96c1505a179e8f13f7b3a0fe004c2acbc0c47a225cc769f",
+                           "phash":  "3418c3c4cf72c5d3",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/4a54a1b7.webp",
+                           "sha256":  "3a35837e83c54d95f80dcfe1fe25306e97562bccb42d3f51fbcf7ab27b9b445b",
+                           "phash":  "3648c2d6a1e5bda1",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/81e422d7.webp",
+                           "sha256":  "2a6708d16a6a9d4c4beab08a978f8bbd06b70f1b7f7bfb7d438b5c36c76f74e5",
+                           "phash":  "7418c7c49bc3c335",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/87e23b2d.webp",
+                           "sha256":  "1bef832b250d199ae89ce6a94939660e895da2cccab8eafa3b70111749bb57ec",
+                           "phash":  "7831c7ca9867c466",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/c4afca0c.webp",
+                           "sha256":  "27075231c6981e9cbba0202f682d1d672b68ac8596b3037866b0699027c35286",
+                           "phash":  "3830c7c8b5cfb443",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/f267f701.webp",
+                           "sha256":  "53c5104a3718349db369ca41e959b02591cdb5a2c4f4edb0550b63ab591c8573",
+                           "phash":  "3bc3a50cd60d34ce",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/f66ee711.webp",
+                           "sha256":  "3eb5862c51b82f79e1224723f83149bc5e620ec2ad58f710ed22036e2b9e3bde",
+                           "phash":  "3930c7cca6c6b523",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2017/f69c6aab.webp",
+                           "sha256":  "f39fe7329c11f17cee707ef034e07d50ed368436ac0c332af04d09e0a749284f",
+                           "phash":  "366c78c3d29e3831",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/594d6fbf.webp",
+                           "sha256":  "ee7281a8d8956b8572534dbfbb22861f35b978a57057145b7323e1709e21fb8b",
+                           "phash":  "5dc58136c94097ed",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/76bc118c.webp",
+                           "sha256":  "2faf04dd93c07057782c894416eaee5e03037642cdce8273c8efb40531bfa902",
+                           "phash":  "778acca094a5995b",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/7ef6d11c.webp",
+                           "sha256":  "4aa65f09278710a450ab8fae8853e41c0cb44519bff539cab09948bb52bc9ec0",
+                           "phash":  "578dc298c327cd4a",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/8532906d.webp",
+                           "sha256":  "040638be9bc5ac80100fc6207a8845da1af16e5fb3e221745f64c946646a52db",
+                           "phash":  "754a00b49759ceb9",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/eea7cc49.webp",
+                           "sha256":  "5535daf117e52567d18f7d2b00e1c42fb19fe20c784b380776e4a61d92dc0577",
+                           "phash":  "1c07c131c37c93fc",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2023/f782823f.webp",
+                           "sha256":  "db5b7661c5edcc702903becc962df73c78d879b757d329558244d0509029e028",
+                           "phash":  "2d71c38c842db3b3",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/0cdb7836.webp",
+                           "sha256":  "7537f7d82b94c1c46b31540b8a9d97ccae66521a07d600a108dffd91ff27df63",
+                           "phash":  "6acecf4cc413b431",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/256727fa.webp",
+                           "sha256":  "8a8d243123b601fda058c675a3b5e0e0ab536d0b7e3691625ddb2d3bf92e65fe",
+                           "phash":  "729559c8b30cd19d",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/5799fc15.webp",
+                           "sha256":  "d67bda8ee2e5f12072080730c3bf93a0264c8d85ea97e6a9d5fc50e06d70e646",
+                           "phash":  "3b31cfc8b006e98d",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/959b88a2.webp",
+                           "sha256":  "87f0b86e2f4674306393fd9e94bc0fbd4163304d46d8982737db2cef50b41c6d",
+                           "phash":  "3dc3c5393c948593",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/9e794682.webp",
+                           "sha256":  "b1c9d2185cb27436284bfdcf0e780c2260d793346704d73ee2b3aad04f7b1c87",
+                           "phash":  "3bd48dd0cc0fc417",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2024/dc929e87.webp",
+                           "sha256":  "fcaeb31b79de48848dcd3f555aa3e11ef17409ad656f15e9b20f14c672a5ec33",
+                           "phash":  "3117cc69ced0c64d",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/28c987c8.webp",
+                           "sha256":  "eee37ddf508cc07564577ac62f7772165c69216daafbb39fd1c4e0296418c9aa",
+                           "phash":  "1e42e325e16e1a9e",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/53e5d5bf.webp",
+                           "sha256":  "1570647a8c96ecf29a715dcf6c66db960d102e0521be0031f9942b1c44885e7e",
+                           "phash":  "69e31d8ec708de84",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/56405cd3.webp",
+                           "sha256":  "07dc5a7b3ed23ea283fb6093fad993821ccbe1c4c3ac0dac0ae388549e66ed0c",
+                           "phash":  "6cca13ebd701d704",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/7717d32a.webp",
+                           "sha256":  "eabd8beb171e1f242ed299e7d24602e3b8a086084684f6d6b82fd5f79312eea5",
+                           "phash":  "1fe096a532decd02",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/c0ca7a1c.webp",
+                           "sha256":  "0bafbc01e7444e7783c1ad61208c131d27442979602f404aa29fabdaa025c87f",
+                           "phash":  "6be0975dc2009f74",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2025/f786523a.webp",
+                           "sha256":  "55699ad10ee32c573116a57c3f7261e0ab7de847af7db138f827f44b56a897ba",
+                           "phash":  "75e4841fd04b9a4b",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/0d8c70ef.webp",
+                           "sha256":  "1bebb7cb33de2d73b558f19f1255f0af87342df8c98e89073e16d7bf0f325250",
+                           "phash":  "1c0cb3c6cc33c1cf",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/6f11899e.webp",
+                           "sha256":  "df576072aaf5194ce4d41b1f1a1ca7624e9ed11a9f2a5b5ba3f7cce114ace1bb",
+                           "phash":  "7501c33cc81bbec6",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/a0ca4a88.webp",
+                           "sha256":  "bac64b955baa8e9babd2f848d7d9f72abee205805e789d7fe356c5ad5c59aa5a",
+                           "phash":  "65cfc93cb29086b8",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/a6e582f0.webp",
+                           "sha256":  "feb13fcbbf12acf5d17f699f6b219307335abf1c6be357cf583deb055c891481",
+                           "phash":  "35d2da02856f8e1d",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/d6b3e77b.webp",
+                           "sha256":  "ea1a48ee4778201ca8e3d47d54f27d389446da482e53d8b11628bf12ff81abfc",
+                           "phash":  "541896e7cc03cbe6",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2315/f1114b51.webp",
+                           "sha256":  "afc11f279254aa1cd700dfa260c1440c4d97740db82d923759f0caadc380c9a9",
+                           "phash":  "5c9863e7856ac3c2",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/1bc77f6b.webp",
+                           "sha256":  "cd315e15ddb9e249212b3113743113488d56224dc34172d570bfba2342b3f946",
+                           "phash":  "1ee1853c87dad21a",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/441fe79e.webp",
+                           "sha256":  "853c1f3ddab155964d202dd4e1dc3f3c8518fae2dc7e5930e9516afcd30f2ad0",
+                           "phash":  "57d21669b78c9984",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/7041a170.webp",
+                           "sha256":  "ad8cfc8fdf40d670d3275b83bb9628be89adf254e18f992fbfd6e5f604f37a84",
+                           "phash":  "6ee04a3ce7c8b10e",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/9a45435d.webp",
+                           "sha256":  "304f8a7e9fddd731d828640f27574cf2904de1769cf1190f3434d12ffffd28da",
+                           "phash":  "53307c4224bdd3ce",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/c17722af.webp",
+                           "sha256":  "845f4544e9a63dfbfd4e8a6026589f420e531ceb0e01d55d810df2bca16d2f80",
+                           "phash":  "57c0cc3ef1ccc825",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       },
+                       {
+                           "source":  "products/ydjl2317/c63f9525.webp",
+                           "sha256":  "f3041c3339392638535573eb2050c95c59d31cfdfb417b755b67247ead4522cf",
+                           "phash":  "3fe0c01ec3d2d80f",
+                           "ruleIds":  [
+                                           "moq-old-fixed",
+                                           "moq-range",
+                                           "years-old",
+                                           "company-founded-year",
+                                           "area-old",
+                                           "public-price",
+                                           "certification"
+                                       ],
+                           "reason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt"
+                       }
+                   ]
 }

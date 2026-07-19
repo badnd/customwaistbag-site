@@ -1,8 +1,10 @@
 import './globals.css';
+import './catalog.css';
 import './mobile.css';
 import Script from 'next/script';
 import Link from 'next/link';
 import { headers } from 'next/headers';
+import { FloatingContactBall } from '../components/FloatingContactBall';
 
 const GA4 = process.env.NEXT_PUBLIC_GA4_ID;
 
@@ -49,9 +51,9 @@ export default async function RootLayout({ children }) {
         <header className="site-header">
           <div className="shell nav-row">
             <Link className="wordmark" href="/">Custom Waist Bag</Link>
-            <nav aria-label="Primary navigation">{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</nav>
+            <nav aria-label="Primary navigation"><details className="product-nav"><summary>Products</summary><div><Link href="/running-waist-bags">Running & Slim</Link><Link href="/everyday-waist-bags">Everyday</Link><Link href="/crossbody-waist-bags">Crossbody & Anti-Theft</Link></div></details>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</nav>
             <div className="nav-actions"><Link href="/ru">RU</Link><Link className="button small" href="/contact">Get a Quote</Link></div>
-            <details className="mobile-menu"><summary aria-label="Open navigation">&#9776;</summary><div>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}<Link href="/contact">Get a Quote</Link></div></details>
+            <details className="mobile-menu"><summary aria-label="Open navigation">&#9776;</summary><div><Link href="/running-waist-bags">Running & Slim Waist Belts</Link><Link href="/everyday-waist-bags">Everyday Waist Bags</Link><Link href="/crossbody-waist-bags">Crossbody & Anti-Theft</Link>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}<Link href="/contact">Get a Quote</Link></div></details>
           </div>
         </header>
         <main>{children}</main>
@@ -62,6 +64,7 @@ export default async function RootLayout({ children }) {
             <div><strong>Company</strong><Link href="/about">About</Link><Link href="/factory">Factory</Link><Link href="/privacy-policy">Privacy</Link></div>
           </div>
         </footer>
+        <FloatingContactBall siteName="customwaistbag.com" />
       </body>
     </html>
   );

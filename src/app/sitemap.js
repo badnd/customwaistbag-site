@@ -1,2 +1,4 @@
+import { productCategories, products, productUrl } from '../data/catalogData';
+
 const paths=['','about','factory','custom-logo','full-print','oem-odm','faq','contact','privacy-policy'];
-export default function sitemap(){const base='https://www.customwaistbag.com';return paths.flatMap(path=>[{url:`${base}/${path}`.replace(/\/$/,path?'':'/'),changeFrequency:path?'monthly':'weekly',priority:path?0.7:1},{url:`${base}/ru${path?`/${path}`:''}`,changeFrequency:path?'monthly':'weekly',priority:path?0.6:0.8}]);}
+export default function sitemap(){const base='https://www.customwaistbag.com';const existing=paths.flatMap(path=>[{url:`${base}/${path}`.replace(/\/$/,path?'':'/'),changeFrequency:path?'monthly':'weekly',priority:path?0.7:1},{url:`${base}/ru${path?`/${path}`:''}`,changeFrequency:path?'monthly':'weekly',priority:path?0.6:0.8}]);const catalog=[...productCategories.flatMap(category=>[`/${category.slug}`,`/ru/${category.slug}`]),...products.flatMap(product=>[productUrl(product,'en'),productUrl(product,'ru')])].map(path=>({url:`${base}${path}`,changeFrequency:'monthly',priority:path.includes('/ydjl')?0.8:0.85}));return [...existing,...catalog];}

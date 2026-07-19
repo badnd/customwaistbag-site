@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { getCategory, getProductByPath, productCategories, products } from '../../data/catalogData';
+import { CategoryPage, ProductPage } from '../../components/CatalogPages';
 
 const media = 'https://images.customwaistbag.com/assets';
 const pages = {
@@ -31,7 +33,7 @@ const pages = {
   'privacy-policy': { title: 'Privacy Policy', intro: 'How inquiry information is handled.', body: <><p>Information submitted by email or WhatsApp is used to respond to your sourcing request, prepare quotations and discuss production details.</p><p>We do not publish buyer names, company names or inquiry details as testimonials without permission.</p></> }
 };
 
-export function generateStaticParams(){return Object.keys(pages).map(slug=>({slug:[slug]}));}
-export async function generateMetadata({params}){const {slug}=await params;const key=slug?.join('/');const page=pages[key];if(!page)return{};const url=`https://www.customwaistbag.com/${key}`;return{title:page.title,description:page.intro,alternates:{canonical:url,languages:{en:url,ru:`https://www.customwaistbag.com/ru/${key}`,'x-default':url}}};}
+export function generateStaticParams(){return [...Object.keys(pages).map(slug=>({slug:[slug]})),...productCategories.map(category=>({slug:[category.slug]})),...products.map(product=>({slug:[product.categorySlug,product.slug]}))];}
+export async function generateMetadata({params}){const {slug}=await params;const key=slug?.join('/');const category=getCategory(key);const product=getProductByPath(key);if(category||product){const title=category?category.title:product.title;const description=category?category.description:product.intro;const en=`https://www.customwaistbag.com/${key}`;const ru=`https://www.customwaistbag.com/ru/${key}`;return{title,description,alternates:{canonical:en,languages:{en,ru,'x-default':en}},openGraph:{title,description,url:en,images:product?[product.gallery[0]]:products.filter(item=>item.categorySlug===key).map(item=>item.gallery[0])}};}const page=pages[key];if(!page)return{};const url=`https://www.customwaistbag.com/${key}`;return{title:page.title,description:page.intro,alternates:{canonical:url,languages:{en:url,ru:`https://www.customwaistbag.com/ru/${key}`,'x-default':url}}};}
 
-export default async function ContentPage({params}){const {slug}=await params;const key=slug?.join('/');const page=pages[key];if(!page)notFound();return <><section className="page-hero"><div className="shell"><div className="eyebrow">Custom Waist Bag</div><h1>{page.title}</h1><p className="lead">{page.intro}</p></div></section><section className="section"><div className="shell rich">{page.body}</div></section></>;}
+export default async function ContentPage({params}){const {slug}=await params;const key=slug?.join('/');const category=getCategory(key);if(category)return <CategoryPage category={category} locale="en"/>;const product=getProductByPath(key);if(product)return <ProductPage product={product} locale="en"/>;const page=pages[key];if(!page)notFound();return <><section className="page-hero"><div className="shell"><div className="eyebrow">Custom Waist Bag</div><h1>{page.title}</h1><p className="lead">{page.intro}</p></div></section><section className="section"><div className="shell rich">{page.body}</div></section></>;}

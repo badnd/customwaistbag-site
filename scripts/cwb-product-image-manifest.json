@@ -1,0 +1,406 @@
+﻿{
+    "generatedAt":  "2026-07-18T11:21:45.600Z",
+    "count":  44,
+    "exemptionReason":  "manufacturer product marketing posters, human-reviewed 2026-07-18, no price/cert/legacy-data/range-MOQ; Low MOQ ambiguous-exempt",
+    "images":  [
+                   {
+                       "path":  "products/ydjl1923/0c052e08.webp",
+                       "sha256":  "4F44BFCBA444B3C3C94034298D426F38662A72F17E4A2AFFF6CD21D85F4FA24A",
+                       "phash":  "580bc7e4c7d1b512",
+                       "dhash":  "89f0c4f098988288",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl1923/1ae92bac.webp",
+                       "sha256":  "89244D837663543EF09D8D137D0B159D79D63BBE1728B63469C3EA65B5983427",
+                       "phash":  "5ae7003fe0c39eb0",
+                       "dhash":  "0e8dcb9696964f4b",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl1923/480b6864.webp",
+                       "sha256":  "1B7DECCFBE23BEC7B3914294FA36978451F88570EE01AA38E7A351C39B45B9AE",
+                       "phash":  "75a6cd5a9448cce8",
+                       "dhash":  "80b6f2d0c0ceae76",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl1923/6b2bf23a.webp",
+                       "sha256":  "9A9F8998AA5A9151EC07C8AAC6F51F1FFB15C1FFE0AFFF23FB302285CE76E404",
+                       "phash":  "73e082fe87d0d0d8",
+                       "dhash":  "d7d7bcacacdc96f6",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl1923/808d3cfb.webp",
+                       "sha256":  "C88D76A631BADCFCE25B989FBF5D00D4092C625E97BDEBC1C7CB6FEE898B2062",
+                       "phash":  "6bc3141cc927ced8",
+                       "dhash":  "c6ee3eb6c4fd6388",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl1923/9b0c028a.webp",
+                       "sha256":  "D1A605F46320DF6555D3B22C1B55FB1BCEE5745A2F9CD369B3E606E45E2811B7",
+                       "phash":  "4ad711389626f6f0",
+                       "dhash":  "8eacae7c7ecccc41",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/0fe29834.webp",
+                       "sha256":  "41C81DC2CA6DE469F96C1505A179E8F13F7B3A0FE004C2ACBC0C47A225CC769F",
+                       "phash":  "3418c3c4cf72c5d3",
+                       "dhash":  "95c2c4e6262836b6",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/4a54a1b7.webp",
+                       "sha256":  "3A35837E83C54D95F80DCFE1FE25306E97562BCCB42D3F51FBCF7AB27B9B445B",
+                       "phash":  "3648c2d6a1e5bda1",
+                       "dhash":  "b3d9c870a2608889",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/81e422d7.webp",
+                       "sha256":  "2A6708D16A6A9D4C4BEAB08A978F8BBD06B70F1B7F7BFB7D438B5C36C76F74E5",
+                       "phash":  "7418c7c49bc3c335",
+                       "dhash":  "92e2d2d2aaaa36aa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/87e23b2d.webp",
+                       "sha256":  "1BEF832B250D199AE89CE6A94939660E895DA2CCCAB8EAFA3B70111749BB57EC",
+                       "phash":  "7831c7ca9867c466",
+                       "dhash":  "8276f0c66e4a169c",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/c4afca0c.webp",
+                       "sha256":  "27075231C6981E9CBBA0202F682D1D672B68AC8596B3037866B0699027C35286",
+                       "phash":  "3830c7c8b5cfb443",
+                       "dhash":  "86e0d8d0646646c8",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/f267f701.webp",
+                       "sha256":  "53C5104A3718349DB369CA41E959B02591CDB5A2C4F4EDB0550B63AB591C8573",
+                       "phash":  "3bc3a50cd60d34ce",
+                       "dhash":  "94bcbcedcd7cda9a",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/f66ee711.webp",
+                       "sha256":  "3EB5862C51B82F79E1224723F83149BC5E620EC2AD58F710ED22036E2B9E3BDE",
+                       "phash":  "3930c7cca6c6b523",
+                       "dhash":  "92e2d8d0e2aad4d4",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2017/f69c6aab.webp",
+                       "sha256":  "F39FE7329C11F17CEE707EF034E07D50ED368436AC0C332AF04D09E0A749284F",
+                       "phash":  "366c78c3d29e3831",
+                       "dhash":  "58444f4945c50949",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/594d6fbf.webp",
+                       "sha256":  "EE7281A8D8956B8572534DBFBB22861F35B978A57057145B7323E1709E21FB8B",
+                       "phash":  "5dc58136c94097ed",
+                       "dhash":  "3cf8bcbcb852b6a2",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/76bc118c.webp",
+                       "sha256":  "2FAF04DD93C07057782C894416EAEE5E03037642CDCE8273C8EFB40531BFA902",
+                       "phash":  "778acca094a5995b",
+                       "dhash":  "a68279f88edc8ece",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/7ef6d11c.webp",
+                       "sha256":  "4AA65F09278710A450AB8FAE8853E41C0CB44519BFF539CAB09948BB52BC9EC0",
+                       "phash":  "578dc298c327cd4a",
+                       "dhash":  "31e8ec66e6ebdbd3",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/8532906d.webp",
+                       "sha256":  "040638BE9BC5AC80100FC6207A8845DA1AF16E5FB3E221745F64C946646A52DB",
+                       "phash":  "754a00b49759ceb9",
+                       "dhash":  "a2a2aaaaaac5e2c0",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/eea7cc49.webp",
+                       "sha256":  "5535DAF117E52567D18F7D2B00E1C42FB19FE20C784B380776E4A61D92DC0577",
+                       "phash":  "1c07c131c37c93fc",
+                       "dhash":  "a3e8fcf0aaaeaaaa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2023/f782823f.webp",
+                       "sha256":  "DB5B7661C5EDCC702903BECC962DF73C78D879B757D329558244D0509029E028",
+                       "phash":  "2d71c38c842db3b3",
+                       "dhash":  "a3e6e8caa2a68480",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/0cdb7836.webp",
+                       "sha256":  "7537F7D82B94C1C46B31540B8A9D97CCAE66521A07D600A108DFFD91FF27DF63",
+                       "phash":  "6acecf4cc413b431",
+                       "dhash":  "0606f8c4f8a8b636",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/256727fa.webp",
+                       "sha256":  "8A8D243123B601FDA058C675A3B5E0E0AB536D0B7E3691625DDB2D3BF92E65FE",
+                       "phash":  "729559c8b30cd19d",
+                       "dhash":  "86a68697c5e65744",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/5799fc15.webp",
+                       "sha256":  "D67BDA8EE2E5F12072080730C3BF93A0264C8D85EA97E6A9D5FC50E06D70E646",
+                       "phash":  "3b31cfc8b006e98d",
+                       "dhash":  "96c690e0e64c1c96",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/959b88a2.webp",
+                       "sha256":  "87F0B86E2F4674306393FD9E94BC0FBD4163304D46D8982737DB2CEF50B41C6D",
+                       "phash":  "3dc3c5393c948593",
+                       "dhash":  "85b4b39caba89631",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/9e794682.webp",
+                       "sha256":  "B1C9D2185CB27436284BFDCF0E780C2260D793346704D73EE2B3AAD04F7B1C87",
+                       "phash":  "3bd48dd0cc0fc417",
+                       "dhash":  "86b6aec8e8b6b448",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2024/dc929e87.webp",
+                       "sha256":  "FCAEB31B79DE48848DCD3F555AA3E11EF17409AD656F15E9B20F14C672A5EC33",
+                       "phash":  "3117cc69ced0c64d",
+                       "dhash":  "8a718cccf15a482a",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/28c987c8.webp",
+                       "sha256":  "EEE37DDF508CC07564577AC62F7772165C69216DAAFBB39FD1C4E0296418C9AA",
+                       "phash":  "1e42e325e16e1a9e",
+                       "dhash":  "f1f8ec3026266666",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/53e5d5bf.webp",
+                       "sha256":  "1570647A8C96ECF29A715DCF6C66DB960D102E0521BE0031F9942B1C44885E7E",
+                       "phash":  "69e31d8ec708de84",
+                       "dhash":  "a62ecea2c997a469",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/56405cd3.webp",
+                       "sha256":  "07DC5A7B3ED23EA283FB6093FAD993821CCBE1C4C3AC0DAC0AE388549E66ED0C",
+                       "phash":  "6cca13ebd701d704",
+                       "dhash":  "06b6e6c638ac844b",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/7717d32a.webp",
+                       "sha256":  "EABD8BEB171E1F242ED299E7D24602E3B8A086084684F6D6B82FD5F79312EEA5",
+                       "phash":  "1fe096a532decd02",
+                       "dhash":  "9bfbfaf1d050c2c6",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/c0ca7a1c.webp",
+                       "sha256":  "0BAFBC01E7444E7783C1AD61208C131D27442979602F404AA29FABDAA025C87F",
+                       "phash":  "6be0975dc2009f74",
+                       "dhash":  "362e94d2b0b0301a",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2025/f786523a.webp",
+                       "sha256":  "55699AD10EE32C573116A57C3F7261E0AB7DE847AF7DB138F827F44B56A897BA",
+                       "phash":  "75e4841fd04b9a4b",
+                       "dhash":  "8e8c94b296926a6a",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/0d8c70ef.webp",
+                       "sha256":  "1BEBB7CB33DE2D73B558F19F1255F0AF87342DF8C98E89073E16D7BF0F325250",
+                       "phash":  "1c0cb3c6cc33c1cf",
+                       "dhash":  "c286f4e4e4e0aaaa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/6f11899e.webp",
+                       "sha256":  "DF576072AAF5194CE4D41B1F1A1CA7624E9ED11A9F2A5B5BA3F7CCE114ACE1BB",
+                       "phash":  "7501c33cc81bbec6",
+                       "dhash":  "b278e8aeaaaa2ad4",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/a0ca4a88.webp",
+                       "sha256":  "BAC64B955BAA8E9BABD2F848D7D9F72ABEE205805E789D7FE356C5AD5C59AA5A",
+                       "phash":  "65cfc93cb29086b8",
+                       "dhash":  "a9ecb8f2f888caf4",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/a6e582f0.webp",
+                       "sha256":  "FEB13FCBBF12ACF5D17F699F6B219307335ABF1C6BE357CF583DEB055C891481",
+                       "phash":  "35d2da02856f8e1d",
+                       "dhash":  "b8e8dcf6e4e68cd0",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/d6b3e77b.webp",
+                       "sha256":  "EA1A48EE4778201CA8E3D47D54F27D389446DA482E53D8B11628BF12FF81ABFC",
+                       "phash":  "541896e7cc03cbe6",
+                       "dhash":  "6480e08ebae0eaaa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2315/f1114b51.webp",
+                       "sha256":  "AFC11F279254AA1CD700DFA260C1440C4D97740DB82D923759F0CAADC380C9A9",
+                       "phash":  "5c9863e7856ac3c2",
+                       "dhash":  "4486e4f49666cecc",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/1bc77f6b.webp",
+                       "sha256":  "CD315E15DDB9E249212B3113743113488D56224DC34172D570BFBA2342B3F946",
+                       "phash":  "1ee1853c87dad21a",
+                       "dhash":  "93babcb89894f4fa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/441fe79e.webp",
+                       "sha256":  "853C1F3DDAB155964D202DD4E1DC3F3C8518FAE2DC7E5930E9516AFCD30F2AD0",
+                       "phash":  "57d21669b78c9984",
+                       "dhash":  "bfbbbdb9bdbcd4cc",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/7041a170.webp",
+                       "sha256":  "AD8CFC8FDF40D670D3275B83BB9628BE89ADF254E18F992FBFD6E5F604F37A84",
+                       "phash":  "6ee04a3ce7c8b10e",
+                       "dhash":  "d15a9ca99baa8e96",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/9a45435d.webp",
+                       "sha256":  "304F8A7E9FDDD731D828640F27574CF2904DE1769CF1190F3434D12FFFFD28DA",
+                       "phash":  "53307c4224bdd3ce",
+                       "dhash":  "185b23a591179899",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/c17722af.webp",
+                       "sha256":  "845F4544E9A63DFBFD4E8A6026589F420E531CEB0E01D55D810DF2BCA16D2F80",
+                       "phash":  "57c0cc3ef1ccc825",
+                       "dhash":  "de9e183010fe4d2c",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   },
+                   {
+                       "path":  "products/ydjl2317/c63f9525.webp",
+                       "sha256":  "F3041C3339392638535573EB2050C95C59D31CFDFB417B755B67247EAD4522CF",
+                       "phash":  "3fe0c01ec3d2d80f",
+                       "dhash":  "9398bcaa8a8428aa",
+                       "width":  1122,
+                       "height":  1402,
+                       "format":  "webp"
+                   }
+               ],
+    "matches":  [
+
+                ]
+}
