@@ -63,7 +63,8 @@ export async function run(ctx) {
     } else hreflangSkipped += 1;
 
     if (url.includes("/ru") && !sameUrl(html.canonical, url)) ctx.add(15, "critical", "RU_CANONICAL", "Russian page canonical must reference itself", { url, actual: html.canonical });
-    const expectedLang = new URL(url).pathname.startsWith("/ru") ? "ru" : "en";
+    const pagePath = new URL(url).pathname;
+    const expectedLang = pagePath === "/ru" || pagePath.startsWith("/ru/") ? "ru" : "en";
     if (!html.lang.startsWith(expectedLang)) ctx.add(16, "warning", "HTML_LANG", `Expected html lang=${expectedLang}`, { url, actual: html.lang || "missing" });
     if (html.robots.includes("noindex") || (response.headers["x-robots-tag"] || "").toLowerCase().includes("noindex")) ctx.add(31, "critical", "UNEXPECTED_NOINDEX", "Sitemap page is marked noindex", { url });
     if (!html.title) ctx.add(32, "critical", "TITLE_MISSING", "Title is missing", { url });
