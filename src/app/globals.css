@@ -21,12 +21,14 @@
 
 /* Shared four-site WhatsApp contact presentation */
 .contact-ball{isolation:isolate;overflow:visible}
-.contact-ball::before,.contact-ball::after{content:"";position:absolute;inset:-2px;border-radius:50%;background:rgba(37,211,102,.42);pointer-events:none;z-index:-1;transform:scale(.86);opacity:0;animation:contact-ball-ripple 2.4s cubic-bezier(.22,.61,.36,1) infinite}
-.contact-ball::after{animation-delay:1.2s}
-.whatsapp-icon{position:relative;z-index:1;width:34px;height:34px;display:block;fill:currentColor}
-.contact-tooltip{position:absolute;z-index:2;top:50%;right:calc(100% + 12px);transform:translate(4px,-50%);opacity:0;visibility:hidden;white-space:nowrap;padding:8px 11px;background:#17211d;color:#fff;font-size:.82rem;font-weight:700;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.2);pointer-events:none;transition:opacity .16s ease,transform .16s ease,visibility .16s}
+.contact-ball::before,.contact-ball::after,.contact-ripple{position:absolute;inset:-3px;border:3px solid rgba(37,211,102,.96);border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.86),0 0 16px rgba(37,211,102,.7);pointer-events:none;z-index:0;transform:scale(.98);transform-origin:center;opacity:0;animation:contact-ball-ripple 1.5s cubic-bezier(.2,.65,.35,1) infinite}
+.contact-ball::before,.contact-ball::after{content:""}
+.contact-ball::after{animation-delay:.5s}
+.contact-ripple{animation-delay:1s}
+.whatsapp-icon{position:relative;z-index:2;width:34px;height:34px;display:block;fill:currentColor}
+.contact-tooltip{position:absolute;z-index:3;top:50%;right:calc(100% + 12px);transform:translate(4px,-50%);opacity:0;visibility:hidden;white-space:nowrap;padding:8px 11px;background:#17211d;color:#fff;font-size:.82rem;font-weight:700;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.2);pointer-events:none;transition:opacity .16s ease,transform .16s ease,visibility .16s}
 .contact-ball[data-side="left"] .contact-tooltip{right:auto;left:calc(100% + 12px);transform:translate(-4px,-50%)}
 @media(hover:hover) and (pointer:fine){.contact-ball:hover .contact-tooltip,.contact-ball:focus-visible .contact-tooltip{opacity:1;visibility:visible;transform:translate(0,-50%)}}
-@keyframes contact-ball-ripple{0%{transform:scale(.86);opacity:0}12%{opacity:.72}80%,100%{transform:scale(1.9);opacity:0}}
-@media(prefers-reduced-motion:reduce){.contact-ball::before,.contact-ball::after{animation:none;display:none}}
+@keyframes contact-ball-ripple{0%{transform:scale(.98);opacity:.96}72%{opacity:.24}100%{transform:scale(2.35);opacity:0}}
+@media(prefers-reduced-motion:reduce){.contact-ball::before,.contact-ball::after,.contact-ripple{animation:none;display:none}}
 @media(max-width:600px){.whatsapp-icon{width:31px;height:31px}.contact-tooltip{display:none}}
