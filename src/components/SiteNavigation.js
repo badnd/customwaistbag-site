@@ -40,7 +40,8 @@ export function SiteNavigation({ locale = 'en' }) {
   };
   const normalizedPath = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname;
   const englishPath = normalizedPath === '/ru' ? '/' : normalizedPath.startsWith('/ru/') ? normalizedPath.slice(3) : normalizedPath;
-  const russianPath = normalizedPath === '/' ? '/ru' : normalizedPath === '/ru' || normalizedPath.startsWith('/ru/') ? normalizedPath : `/ru${normalizedPath}`;
+  const isEnglishOnlyBlog = englishPath === '/blog' || englishPath.startsWith('/blog/');
+  const russianPath = isEnglishOnlyBlog ? '/ru' : normalizedPath === '/' ? '/ru' : normalizedPath === '/ru' || normalizedPath.startsWith('/ru/') ? normalizedPath : `/ru${normalizedPath}`;
 
   useEffect(() => {
     const onPointerDown = (event) => {
