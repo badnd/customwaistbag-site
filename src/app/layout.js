@@ -54,9 +54,9 @@ export default async function RootLayout({ children }) {
         <main>{children}</main>
         <footer>
           <div className="shell footer-grid">
-            <div><strong>Custom Waist Bag</strong><p>Waist bag structure, sampling and private-label production support.</p></div>
+            <div><strong>Custom Waist Bag</strong><p>{lang === 'ru' ? 'Конструкция поясных сумок, разработка образцов и поддержка производства под частной торговой маркой.' : 'Waist bag structure, sampling and private-label production support.'}</p></div>
             <div><strong>Contact</strong><a href="mailto:annawei@nameerbag.com">annawei@nameerbag.com</a><a href="https://wa.me/8615102249548">WhatsApp 008615102249548</a></div>
-            <div><strong>Company</strong><Link href="/about">About</Link><Link href="/factory">Factory</Link><Link href="/privacy-policy">Privacy</Link></div>
+            <div><strong>{lang === 'ru' ? 'Компания' : 'Company'}</strong><Link href={lang === 'ru' ? '/ru/about' : '/about'}>{lang === 'ru' ? 'О нас' : 'About'}</Link><Link href={lang === 'ru' ? '/ru/factory' : '/factory'}>{lang === 'ru' ? 'Производство' : 'Factory'}</Link><Link href={lang === 'ru' ? '/ru/privacy-policy' : '/privacy-policy'}>{lang === 'ru' ? 'Конфиденциальность' : 'Privacy'}</Link></div>
           </div>
         </footer>
         <FloatingContactBall siteName="customwaistbag.com" />

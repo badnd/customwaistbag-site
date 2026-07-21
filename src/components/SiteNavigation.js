@@ -2,21 +2,22 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const productLinks = [
-  ['Running & Slim', '/running-waist-bags'],
-  ['Everyday', '/everyday-waist-bags'],
-  ['Crossbody & Anti-Theft', '/crossbody-waist-bags'],
+  ['Running & Slim', 'Беговые и тонкие', '/running-waist-bags'],
+  ['Everyday', 'Повседневные', '/everyday-waist-bags'],
+  ['Crossbody & Anti-Theft', 'Кросс-боди и антикража', '/crossbody-waist-bags'],
 ];
 
 const navLinks = [
-  ['Home', '/'],
-  ['Capabilities', '/custom-logo'],
-  ['Full Print', '/full-print'],
-  ['OEM/ODM', '/oem-odm'],
-  ['Factory', '/factory'],
-  ['About', '/about'],
-  ['FAQ', '/faq'],
+  ['Home', 'Главная', '/'],
+  ['Capabilities', 'Нанесение логотипа', '/custom-logo'],
+  ['Full Print', 'Полная запечатка', '/full-print'],
+  ['OEM/ODM', 'OEM/ODM', '/oem-odm'],
+  ['Factory', 'Производство', '/factory'],
+  ['About', 'О нас', '/about'],
+  ['FAQ', 'Вопросы', '/faq'],
 ];
 
 function localized(path, locale) {
@@ -25,6 +26,7 @@ function localized(path, locale) {
 }
 
 export function SiteNavigation({ locale = 'en' }) {
+  const pathname = usePathname() || '/';
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const rootRef = useRef(null);
@@ -36,6 +38,9 @@ export function SiteNavigation({ locale = 'en' }) {
     cancelClose();
     closeTimer.current = window.setTimeout(() => setProductsOpen(false), 180);
   };
+  const normalizedPath = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname;
+  const englishPath = normalizedPath === '/ru' ? '/' : normalizedPath.startsWith('/ru/') ? normalizedPath.slice(3) : normalizedPath;
+  const russianPath = normalizedPath === '/' ? '/ru' : normalizedPath === '/ru' || normalizedPath.startsWith('/ru/') ? normalizedPath : `/ru${normalizedPath}`;
 
   useEffect(() => {
     const onPointerDown = (event) => {
@@ -64,20 +69,20 @@ export function SiteNavigation({ locale = 'en' }) {
     <div className="shell nav-row" ref={rootRef}>
       <Link className="wordmark" href={localized('/', locale)}>Custom Waist Bag</Link>
       <nav aria-label="Primary navigation">
-        <Link href={localized('/', locale)}>Home</Link>
+        <Link href={localized('/', locale)}>{locale === 'ru' ? 'Главная' : 'Home'}</Link>
         <div className={`product-nav${productsOpen ? ' open' : ''}`} onMouseEnter={cancelClose} onMouseLeave={delayClose}>
-          <button ref={triggerRef} type="button" aria-haspopup="true" aria-expanded={productsOpen} onClick={() => setProductsOpen((open) => !open)}>Products</button>
-          <div className="product-nav-menu">{productLinks.map(([label, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setProductsOpen(false)}>{label}</Link>)}</div>
+          <button ref={triggerRef} type="button" aria-haspopup="true" aria-expanded={productsOpen} onClick={() => setProductsOpen((open) => !open)}>{locale === 'ru' ? 'Продукция' : 'Products'}</button>
+          <div className="product-nav-menu">{productLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setProductsOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}</div>
         </div>
-        {navLinks.slice(1).map(([label, href]) => <Link key={href} href={localized(href, locale)}>{label}</Link>)}
+        {navLinks.slice(1).map(([en, ru, href]) => <Link key={href} href={localized(href, locale)}>{locale === 'ru' ? ru : en}</Link>)}
       </nav>
-      <div className="nav-actions"><Link href={locale === 'ru' ? '/' : '/ru'}>{locale === 'ru' ? 'EN' : 'RU'}</Link><Link className="button small" href={localized('/contact', locale)}>{locale === 'ru' ? 'Запросить цену' : 'Get a Quote'}</Link></div>
+      <div className="nav-actions"><div className="language-switcher" aria-label="Language switcher"><Link className={locale === 'en' ? 'active' : ''} href={englishPath}>EN</Link><span aria-hidden="true">|</span><Link className={locale === 'ru' ? 'active' : ''} href={russianPath}>RU</Link></div><Link className="button small" href={localized('/contact', locale)}>{locale === 'ru' ? 'Запросить цену' : 'Get a Quote'}</Link></div>
       <div className={`mobile-menu${mobileOpen ? ' open' : ''}`}>
         <button type="button" className="mobile-menu-trigger" aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? '×' : '☰'}</button>
         <div className="mobile-menu-panel">
-          {navLinks.map(([label, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{label}</Link>)}
-          <span className="mobile-menu-label">Products</span>
-          {productLinks.map(([label, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{label}</Link>)}
+          {navLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}
+          <span className="mobile-menu-label">{locale === 'ru' ? 'Продукция' : 'Products'}</span>
+          {productLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}
           <Link href={localized('/contact', locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? 'Запросить цену' : 'Get a Quote'}</Link>
         </div>
       </div>
