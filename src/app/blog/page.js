@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { blogPosts } from '../../data/blog-posts';
+import { blogCardImage } from '../../lib/card-images';
 
 export const metadata = {
   title: 'Custom Waist Bag Manufacturing Guides',
@@ -19,9 +20,9 @@ export default function BlogIndexPage() {
       </section>
       <section className="section">
         <div className="shell blog-grid">
-          {blogPosts.map((post) => (
+          {blogPosts.map((post, index) => (
             <article className="blog-card" key={post.slug}>
-              <img src={post.hero} alt={post.heroAlt || post.title} />
+              <img src={blogCardImage(index)} alt={post.heroAlt || post.title} />
               <div className="blog-card-copy">
                 <p className="eyebrow">{post.category} · {post.date}</p>
                 <h2>{post.title}</h2>

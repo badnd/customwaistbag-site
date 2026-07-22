@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { productUrl, productsForCategory } from '../data/catalogData';
 import { PosterGallery } from './PosterGallery';
+import { productCardImage } from '../lib/card-images';
 
 const origin = 'https://www.customwaistbag.com';
 
@@ -21,12 +22,12 @@ function ResourceLinks({ locale }) {
   return <aside className="related-resources"><h2>{ru ? 'Планирование заказа' : 'Plan your custom order'}</h2>{links.map(([label, slug]) => <Link key={slug} href={`${prefix}/resources/${slug}`}>{label}</Link>)}</aside>;
 }
 
-function ProductCard({ product, locale }) {
+export function ProductCard({ product, locale }) {
   const ru = locale === 'ru';
   return (
     <article className="product-card">
       <Link href={productUrl(product, locale)}>
-        <img src={product.gallery[0]} alt={`${product.model} ${ru ? product.ruType : product.type}`} loading="lazy" width="1122" height="1402" />
+        <img src={productCardImage(product)} alt={`${product.model} ${ru ? product.ruType : product.type}`} loading="lazy" width="720" height="540" />
       </Link>
       <div className="product-card-copy">
         <p className="product-model">{product.model}</p>

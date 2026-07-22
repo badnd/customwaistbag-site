@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-22",
+  "entries": [
+    {
+      "slug": "ydjl1923-slim-running-waist-bag",
+      "model": "YDJL1923",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl1923/9b0c028a.webp",
+      "crop": {
+        "left": 168,
+        "top": 897,
+        "width": 842,
+        "height": 196
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl1923/thumb-card.webp",
+      "sha256": "c385bcdeb64b90950ede6953b666e0aa9bac91d3712c7d59de93261daa139ce5",
+      "phash": "66cc31339cce6683",
+      "dhash": "00009c8c6c0c0000",
+      "sourcePath": "public/assets/products/ydjl1923/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2025-sports-running-waist-bag",
+      "model": "YDJL2025",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2025/53e5d5bf.webp",
+      "crop": {
+        "left": 112,
+        "top": 477,
+        "width": 561,
+        "height": 294
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2025/thumb-card.webp",
+      "sha256": "8b89f40860c044f1c4d4bb46ee987bb30cea1d90726c7c83e9156bac2507127e",
+      "phash": "3c2dd034c7e30ec3",
+      "dhash": "00e19c7034e14d00",
+      "sourcePath": "public/assets/products/ydjl2025/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2023-running-waist-bag",
+      "model": "YDJL2023",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2023/594d6fbf.webp",
+      "crop": {
+        "left": 539,
+        "top": 210,
+        "width": 516,
+        "height": 603
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2023/thumb-card.webp",
+      "sha256": "b0f1100f2db7f7b060627ef24159096f733af9586f693938cf036dd78ddcda04",
+      "phash": "7207aff951044ba3",
+      "dhash": "e0e0f0f0e4f0f8f0",
+      "sourcePath": "public/assets/products/ydjl2023/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2035-sports-waist-bag",
+      "model": "YDJL2035",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2035/e9ce7709-1aac-478a-b93e-cd7fdba2c5e1.webp",
+      "crop": {
+        "left": 100,
+        "top": 125,
+        "width": 627,
+        "height": 777
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2035/thumb-card.webp",
+      "sha256": "66e7f5001e9a066bf7da9cf7f5a2565c0bb276c005dcd9159107059ce8ccb443",
+      "phash": "5207b5f84e0b35c5",
+      "dhash": "f1e1e9ccf0f0f0f0",
+      "sourcePath": "public/assets/products/ydjl2035/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2017-nylon-waist-bag",
+      "model": "YDJL2017",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2017/f69c6aab.webp",
+      "crop": {
+        "left": 359,
+        "top": 210,
+        "width": 482,
+        "height": 659
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2017/thumb-card.webp",
+      "sha256": "254739cf370acf2fd4d4b0f5d41a886969e119608c8b6878b0bbe2bbc0381bfe",
+      "phash": "041dfbe0c49d333a",
+      "dhash": "e0c8ccc8f8e8c0e0",
+      "sourcePath": "public/assets/products/ydjl2017/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2024-sport-waist-bag",
+      "model": "YDJL2024",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2024/256727fa.webp",
+      "crop": {
+        "left": 224,
+        "top": 533,
+        "width": 842,
+        "height": 336
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2024/thumb-card.webp",
+      "sha256": "f48efc1f3c7200237cc21a124dac16355b00ed73b7a58abf9fd2744617f9fa3f",
+      "phash": "34664dc3b269c9c3",
+      "dhash": "009ea535358c0e00",
+      "sourcePath": "public/assets/products/ydjl2024/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2315-anti-theft-sport-waist-bag",
+      "model": "YDJL2315",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2315/a0ca4a88.webp",
+      "crop": {
+        "left": 393,
+        "top": 210,
+        "width": 471,
+        "height": 743
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2315/thumb-card.webp",
+      "sha256": "375acd1df4ea60dc131deeda9812ce5d0632dacfa7ae32e2f3cf23a61a42e4a3",
+      "phash": "7ee0851f7cf14284",
+      "dhash": "7979797169797979",
+      "sourcePath": "public/assets/products/ydjl2315/thumb-card.webp"
+    },
+    {
+      "slug": "ydjl2317-waterproof-waist-bag",
+      "model": "YDJL2317",
+      "source": "https://images.customwaistbag.com/assets/products/ydjl2317/441fe79e.webp",
+      "crop": {
+        "left": 505,
+        "top": 140,
+        "width": 438,
+        "height": 925
+      },
+      "cardImage": "https://images.customwaistbag.com/assets/products/ydjl2317/thumb-card.webp",
+      "sha256": "ed4683ae46e0095c3ee7ebb0a5b9f3a93b2d8a398bf305c06222e6d617acb8c9",
+      "phash": "43a4bc5b43a4cc5b",
+      "dhash": "7171797171797171",
+      "sourcePath": "public/assets/products/ydjl2317/thumb-card.webp"
+    }
+  ]
+}
