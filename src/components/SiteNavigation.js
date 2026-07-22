@@ -17,6 +17,7 @@ const navLinks = [
   ['OEM/ODM', 'OEM/ODM', '/oem-odm'],
   ['Factory', 'Производство', '/factory'],
   ['About', 'О нас', '/about'],
+  ['Resources', 'Ресурсы', '/resources'],
   ['FAQ', 'Вопросы', '/faq'],
 ];
 

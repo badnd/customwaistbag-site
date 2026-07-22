@@ -83,6 +83,12 @@ export default async function BlogPostPage({ params }) {
           <div className="shell article-container">
             <img className="article-hero" src={post.hero} alt={post.heroAlt || post.title} />
             <RichBlogContent post={post} />
+            <aside className="related-resources">
+              <h2>Buyer planning tools</h2>
+              <Link href="/resources/waist-bag-customization-guide">Waist bag customization guide</Link>
+              <Link href="/resources/waist-bag-moq-guide">MOQ and order tiers</Link>
+              <Link href="/resources/sampling-production-timeline">Sampling and production timeline</Link>
+            </aside>
           </div>
         </section>
       </article>

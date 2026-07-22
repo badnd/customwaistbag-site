@@ -12,6 +12,15 @@ function JsonLd({ data }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
+function ResourceLinks({ locale }) {
+  const ru = locale === 'ru';
+  const prefix = ru ? '/ru' : '';
+  const links = ru
+    ? [['MOQ и уровни заказа', 'waist-bag-moq-guide'], ['Размеры и вместимость', 'waist-bag-size-guide'], ['Логотип и кастомизация', 'waist-bag-customization-guide'], ['Сроки образца и производства', 'sampling-production-timeline']]
+    : [['MOQ and order tiers', 'waist-bag-moq-guide'], ['Size and capacity guide', 'waist-bag-size-guide'], ['Logo and customization methods', 'waist-bag-customization-guide'], ['Sampling and production timeline', 'sampling-production-timeline']];
+  return <aside className="related-resources"><h2>{ru ? 'Планирование заказа' : 'Plan your custom order'}</h2>{links.map(([label, slug]) => <Link key={slug} href={`${prefix}/resources/${slug}`}>{label}</Link>)}</aside>;
+}
+
 function ProductCard({ product, locale }) {
   const ru = locale === 'ru';
   return (
@@ -60,7 +69,7 @@ export function CategoryPage({ category, locale = 'en' }) {
     <>
       {schemas.map((schema, index) => <JsonLd key={index} data={schema} />)}
       <section className="page-hero catalog-hero"><div className="shell"><div className="eyebrow">{ru ? 'Категория поясных сумок' : 'Waist Bag Collection'}</div><h1>{ru ? category.ruTitle : category.title}</h1><p className="lead">{ru ? category.ruDescription : category.description}</p></div></section>
-      <section className="section"><div className="shell"><div className="product-card-grid">{items.map((product) => <ProductCard key={product.model} product={product} locale={locale} />)}</div><p className="moq-note">{ru ? '* Итоговый MOQ зависит от модели, материала и способа нанесения логотипа. Анна подтвердит его в предложении.' : '* Final MOQ depends on style, fabric and logo method. Anna will confirm in your quotation.'}</p></div></section>
+      <section className="section"><div className="shell"><div className="product-card-grid">{items.map((product) => <ProductCard key={product.model} product={product} locale={locale} />)}</div><p className="moq-note">{ru ? '* Итоговый MOQ зависит от модели, материала и способа нанесения логотипа. Анна подтвердит его в предложении.' : '* Final MOQ depends on style, fabric and logo method. Anna will confirm in your quotation.'}</p><ResourceLinks locale={locale} /></div></section>
     </>
   );
 }
@@ -118,6 +127,7 @@ export function ProductPage({ product, locale = 'en' }) {
       <section className="section"><div className="shell product-copy-grid"><div><h2>{ru ? 'Характеристики' : 'Specifications'}</h2><div className="spec-table-wrap"><table className="spec-table"><tbody>{product.specs.map((item) => <tr key={item.label}><th>{ru ? item.ruLabel : item.label}</th><td>{ru ? item.ruValue : item.value}</td></tr>)}</tbody></table></div></div><div><h2>{ru ? 'Ключевые особенности' : 'Key Features'}</h2><ul className="feature-list">{product.features.map((item) => <li key={item.en}>{text(item, locale)}</li>)}</ul><h2>{ru ? 'Цвета' : 'Colors'}</h2><div className="chip-list">{product.colors.map((item) => <span key={item.en}>{text(item, locale)}</span>)}</div></div></div></section>
       <section className="section alt"><div className="shell"><div className="section-head"><div className="eyebrow">{ru ? 'Галерея продукта' : 'Product Gallery'}</div><h2>{ru ? 'Детали, размеры и варианты брендирования' : 'Details, dimensions and branding options'}</h2><p>{ru ? 'Откройте миниатюру, чтобы рассмотреть постер полностью. Основные характеристики остаются в доступном HTML выше.' : 'Open any thumbnail to inspect the complete poster. Core specifications remain available as accessible HTML above.'}</p></div><PosterGallery images={product.gallery.slice(1)} title={ru ? product.ruTitle : product.title} subjects={product.subjects.slice(1).map((item) => text(item, locale))} locale={locale} /></div></section>
       <section id="quote" className="section"><div className="shell"><InquiryPanel product={product} locale={locale} /></div></section>
+      <section className="section alt"><div className="shell"><ResourceLinks locale={locale} /></div></section>
     </>
   );
 }
