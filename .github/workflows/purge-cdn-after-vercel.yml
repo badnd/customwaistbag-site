@@ -28,12 +28,15 @@ jobs:
             cat purge-response.json || true
             echo
 
-            if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 300 ]; then
+            if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 300 ] && \
+              jq -e '.ok == true and .skipped != true and .cloudflareSuccess == true' purge-response.json >/dev/null; then
               exit 0
             fi
+
+            echo "Purge response did not confirm a successful Cloudflare purge."
 
             sleep 10
           done
 
-          echo "CDN purge callback failed after retries; deployment remains successful."
-          exit 0
+          echo "CDN purge callback failed after retries."
+          exit 1
