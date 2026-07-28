@@ -84,6 +84,7 @@ export function SiteNavigation({ locale = 'en' }) {
         {navLinks.slice(1).map(([en, ru, href]) => <Link key={href} href={localized(href, locale)}>{locale === 'ru' ? ru : en}</Link>)}
       </nav>
       <div className="nav-actions"><div className="language-switcher" aria-label="Language switcher"><Link className={locale === 'en' ? 'active' : ''} href={englishPath}>EN</Link><span aria-hidden="true">|</span><Link className={locale === 'ru' ? 'active' : ''} href={russianPath}>RU</Link></div><Link className="button small" href={localized('/contact', locale)}>{locale === 'ru' ? 'Запросить цену' : 'Get a Quote'}</Link></div>
+      <a className="button secondary small header-email" href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry">Email Us</a>
       <div className={`mobile-menu${mobileOpen ? ' open' : ''}`}>
         <button type="button" className="mobile-menu-trigger" aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? '×' : '☰'}</button>
         <div className="mobile-menu-panel">
