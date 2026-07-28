@@ -11,6 +11,7 @@
 .hero-inner{padding:76px 0 60px;max-width:900px}
 .hero-inner h1{font-size:4.15rem;max-width:880px;margin-bottom:16px}
 .hero-inner .lead{max-width:690px;margin-bottom:24px}
+@media(min-width:901px){.hero-inner{max-width:900px}.hero-inner .lead{max-width:860px}}
 .hero .proof{padding:18px 0 0}
 .hero-note{margin:10px 0 0;color:rgba(255,255,255,.84)}
 .hero-inner .actions{margin:24px 0 0}
