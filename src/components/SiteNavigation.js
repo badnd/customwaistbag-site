@@ -87,7 +87,8 @@ export function SiteNavigation({ locale = 'en' }) {
       <a className="button secondary small header-email" href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry">Email Us</a>
       <div className={`mobile-menu${mobileOpen ? ' open' : ''}`}>
         <button type="button" className="mobile-menu-trigger" aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? '×' : '☰'}</button>
-        <div className="mobile-menu-panel">
+      <div className="mobile-menu-panel">
+        <a href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry" onClick={() => setMobileOpen(false)}>Email Us</a>
           {navLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}
           <span className="mobile-menu-label">{locale === 'ru' ? 'Продукция' : 'Products'}</span>
           {productLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}
