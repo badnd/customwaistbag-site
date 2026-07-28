@@ -32,6 +32,7 @@
 
 /* Shared four-site WhatsApp contact presentation */
 .contact-ball{isolation:isolate;overflow:visible}
+.email-fallback-wrap{position:relative;display:inline-flex}.email-fallback{position:absolute;z-index:70;right:0;top:calc(100% + 8px);display:flex;align-items:center;gap:8px;min-width:230px;padding:10px 12px;background:#17211d;color:#fff;font-size:.82rem;line-height:1.3;box-shadow:0 8px 24px rgba(0,0,0,.22)}.email-fallback button{border:1px solid #fff;background:transparent;color:#fff;padding:4px 7px;font:inherit;cursor:pointer;white-space:nowrap}
 .contact-ball::before,.contact-ball::after,.contact-ripple{position:absolute;inset:-4px;border:5px solid rgba(37,211,102,1);border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.82),0 0 24px rgba(37,211,102,.9);pointer-events:none;z-index:0;transform:scale(1);transform-origin:center;opacity:0;will-change:transform,opacity;animation:contact-ball-ripple 3s cubic-bezier(.18,.55,.3,1) infinite}
 .contact-ball::before,.contact-ball::after{content:""}
 .contact-ball::after{animation-delay:1s}
