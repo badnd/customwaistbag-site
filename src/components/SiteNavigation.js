@@ -67,6 +67,11 @@ export function SiteNavigation({ locale = 'en' }) {
     };
   }, [productsOpen]);
 
+  useEffect(() => {
+    document.body.classList.toggle('mobile-nav-open', mobileOpen);
+    return () => document.body.classList.remove('mobile-nav-open');
+  }, [mobileOpen]);
+
   return (
     <div className="shell nav-row" ref={rootRef}>
       <Link className="wordmark" href={localized('/', locale)}>Custom Waist Bag</Link>
