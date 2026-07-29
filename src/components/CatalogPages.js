@@ -95,7 +95,7 @@ function InquiryPanel({ product, locale }) {
         <p>OEM / ODM &nbsp; / &nbsp; Private Label &nbsp; / &nbsp; Wholesale welcome.</p>
       </div>
       <p className="moq-note">{ru ? '* Итоговый MOQ зависит от модели, материала и способа нанесения логотипа. Анна подтвердит его в предложении.' : '* Final MOQ depends on style, fabric and logo method. Anna will confirm in your quotation.'}</p>
-      <div className="contact-anna"><strong>{ru ? 'Связаться с Анной Вэй' : 'Contact Anna Wei'}:</strong><a href="mailto:annawei@nameerbag.com">annawei@nameerbag.com</a><a href={whatsapp} target="_blank" rel="noopener">WhatsApp: +86 151 0224 9548</a><span>WeChat: 15102249548</span></div>
+      <div className="contact-anna"><strong>{ru ? 'Связаться с Анной Вэй' : 'Contact Anna Wei'}:</strong><a href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry">annawei@nameerbag.com</a><a href={whatsapp} target="_blank" rel="noopener">WhatsApp: +86 151 0224 9548</a><span>WeChat: 15102249548</span></div>
       <div className="actions"><a className="button" href={whatsapp} target="_blank" rel="noopener">{ru ? 'Написать в WhatsApp' : 'WhatsApp Anna'}</a><a className="button secondary" href={`mailto:annawei@nameerbag.com?subject=${subject}`}>{ru ? 'Отправить email' : 'Email Anna'}</a></div>
     </section>
   );
