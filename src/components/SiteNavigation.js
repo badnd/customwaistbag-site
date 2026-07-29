@@ -83,12 +83,14 @@ export function SiteNavigation({ locale = 'en' }) {
           <div className="product-nav-menu">{productLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setProductsOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}</div>
         </div>
         {navLinks.slice(1).map(([en, ru, href]) => <Link key={href} href={localized(href, locale)}>{locale === 'ru' ? ru : en}</Link>)}
+        {locale === 'en' ? <Link href="/blog">Blog</Link> : null}
       </nav>
       <div className="nav-actions"><div className="language-switcher" aria-label="Language switcher"><Link className={locale === 'en' ? 'active' : ''} href={englishPath}>EN</Link><span aria-hidden="true">|</span><Link className={locale === 'ru' ? 'active' : ''} href={russianPath}>RU</Link></div><Link className="button small" href={localized('/contact', locale)}>{locale === 'ru' ? 'Запросить цену' : 'Get a Quote'}</Link></div>
       <EmailUsLink className="button secondary small header-email" email="annawei@nameerbag.com" subject="customwaistbag.com inquiry" />
       <div className={`mobile-menu${mobileOpen ? ' open' : ''}`}>
         <button type="button" className="mobile-menu-trigger" aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? '×' : '☰'}</button>
       <div className="mobile-menu-panel">
+          {locale === 'en' ? <Link href="/blog" onClick={() => setMobileOpen(false)}>Blog</Link> : null}
         <EmailUsLink email="annawei@nameerbag.com" subject="customwaistbag.com inquiry" onClick={() => setMobileOpen(false)} />
           {navLinks.map(([en, ru, href]) => <Link key={href} href={localized(href, locale)} onClick={() => setMobileOpen(false)}>{locale === 'ru' ? ru : en}</Link>)}
           <span className="mobile-menu-label">{locale === 'ru' ? 'Продукция' : 'Products'}</span>
