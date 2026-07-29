@@ -55,7 +55,7 @@ export default async function RootLayout({ children }) {
         <footer>
           <div className="shell footer-grid">
             <div><strong>Custom Waist Bag</strong><p>{lang === 'ru' ? 'Конструкция поясных сумок, разработка образцов и поддержка производства под частной торговой маркой.' : 'Waist bag structure, sampling and private-label production support.'}</p></div>
-<div><strong>Contact</strong><a href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry">annawei@nameerbag.com</a><a href="https://wa.me/8615102249548">WhatsApp 008615102249548</a></div>
+<div><strong>Contact</strong><a href="mailto:annawei@nameerbag.com?subject=customwaistbag.com%20inquiry">annawei@nameerbag.com</a><a href="https://wa.me/8615102249548?text=Hi%2C%20I%20am%20contacting%20you%20from%20customwaistbag.com.%20I%20would%20like%20to%20discuss%20a%20custom%20waist%20bag%20project.%20Please%20send%20MOQ%20tiers%2C%20sample%20cost%20and%20lead%20time.%20-%20Anna%20Wei%2C%20Sales">WhatsApp 008615102249548</a></div>
             <div><strong>{lang === 'ru' ? 'Компания' : 'Company'}</strong><Link href={lang === 'ru' ? '/ru/about' : '/about'}>{lang === 'ru' ? 'О нас' : 'About'}</Link><Link href={lang === 'ru' ? '/ru/factory' : '/factory'}>{lang === 'ru' ? 'Производство' : 'Factory'}</Link><Link href={lang === 'ru' ? '/ru/privacy-policy' : '/privacy-policy'}>{lang === 'ru' ? 'Конфиденциальность' : 'Privacy'}</Link></div>
           </div>
         </footer>
