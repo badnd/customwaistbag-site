@@ -26,12 +26,13 @@ export function ProductCard({ product, locale }) {
   const ru = locale === 'ru';
   return (
     <article className="product-card">
-      <Link href={productUrl(product, locale)}>
+      <Link className="product-card-media" href={productUrl(product, locale)}>
         <img src={productCardImage(product)} alt={`${product.model} ${ru ? product.ruType : product.type}`} loading="lazy" width="720" height="540" />
       </Link>
       <div className="product-card-copy">
         <p className="product-model">{product.model}</p>
         <h2><Link href={productUrl(product, locale)}>{ru ? product.ruType : product.type}</Link></h2>
+        <p className="product-card-summary">{ru ? product.ruIntro : product.intro}</p>
         <ul className="product-facts">
           <li>{ru ? 'MOQ: от 50 шт.*' : 'MOQ: from 50 pcs*'}</li>
           <li>{ru ? 'Срок: образец 7–15 дней · партия 15–30 дней' : 'Lead Time: Sample 7–15 days · Bulk 15–30 days'}</li>
