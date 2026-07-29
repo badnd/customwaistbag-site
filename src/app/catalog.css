@@ -1,8 +1,8 @@
 .catalog-hero .lead{max-width:900px}
 .product-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .product-card{border:1px solid var(--line);background:#fff;overflow:hidden}
-.product-card>a{display:grid;place-items:center;aspect-ratio:4/3;min-height:0;overflow:hidden;background:#fff}
-.product-card img{width:100%;height:100%;object-fit:contain;object-position:center}
+.product-card>a{display:grid;place-items:center;aspect-ratio:4/3;min-height:0;overflow:hidden;background:#f4f6f8}
+.product-card img{width:100%;height:100%;object-fit:cover;object-position:center}
 .product-card-copy{padding:20px}
 .product-card-copy h2{font-size:1.35rem}
 .product-model{color:var(--green);font-weight:800}
