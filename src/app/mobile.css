@@ -5,4 +5,16 @@
 .mobile-menu-panel a{padding:9px 10px}
 .mobile-menu-panel a:hover,.mobile-menu-panel a:focus-visible{background:var(--paper)}
 .mobile-menu-label{padding:12px 10px 4px;color:var(--green);font-size:.78rem;font-weight:800;text-transform:uppercase}
+/* Match the desktop information sequence: Home, Products and its categories,
+   then the remaining primary links. The existing localized link labels stay intact. */
+.mobile-menu-panel.locale-en > *{order:20}
+.mobile-menu-panel.locale-en > :nth-child(2){order:-1}
+.mobile-menu-panel.locale-en > :nth-child(3){order:0}
+.mobile-menu-panel.locale-en > :nth-child(11),.mobile-menu-panel.locale-en > :nth-child(12),.mobile-menu-panel.locale-en > :nth-child(13),.mobile-menu-panel.locale-en > :nth-child(14){order:1}
+.mobile-menu-panel.locale-en > :nth-child(15){order:40}
+.mobile-menu-panel.locale-ru > *{order:20}
+.mobile-menu-panel.locale-ru > :nth-child(1){order:-1}
+.mobile-menu-panel.locale-ru > :nth-child(2){order:0}
+.mobile-menu-panel.locale-ru > :nth-child(10),.mobile-menu-panel.locale-ru > :nth-child(11),.mobile-menu-panel.locale-ru > :nth-child(12),.mobile-menu-panel.locale-ru > :nth-child(13){order:1}
+.mobile-menu-panel.locale-ru > :nth-child(14){order:40}
 @media(max-width:900px){.mobile-menu{display:block}}
