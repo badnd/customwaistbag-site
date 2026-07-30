@@ -11,6 +11,7 @@
 .mobile-menu-panel.locale-en > :nth-child(2){order:-1}
 .mobile-menu-panel.locale-en > :nth-child(3){order:0}
 .mobile-menu-panel.locale-en > :nth-child(11),.mobile-menu-panel.locale-en > :nth-child(12),.mobile-menu-panel.locale-en > :nth-child(13),.mobile-menu-panel.locale-en > :nth-child(14){order:1}
+.mobile-menu-panel.locale-en > :nth-child(1){order:30}
 .mobile-menu-panel.locale-en > :nth-child(15){order:40}
 .mobile-menu-panel.locale-ru > *{order:20}
 .mobile-menu-panel.locale-ru > :nth-child(1){order:-1}
