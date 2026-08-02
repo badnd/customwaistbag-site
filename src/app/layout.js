@@ -50,6 +50,20 @@ export default async function RootLayout({ children }) {
             s.src='https://www.googletagmanager.com/gtag/js?id=${GA4}';document.head.appendChild(s);
           },1200);
         `}</Script> : null}
+        <div className="topbar">
+          <div className="shell">
+            <div className="topbar-mobile-promise">OEM/ODM Custom Bags · Low MOQ · Fast Response</div>
+            <div className="topbar-items">
+              <span>Email: annawei@nameerbag.com</span>
+              <span>WhatsApp: 008615102249548</span>
+              <span>WeChat: 15102249548</span>
+            </div>
+            <div className="topbar-actions">
+              <span>OEM / ODM Custom Bag Manufacturer</span>
+              <span>Low MOQ - Fast Response</span>
+            </div>
+          </div>
+        </div>
         <header className="site-header"><SiteNavigation locale={lang} /></header>
         <main>{children}</main>
         <footer>
