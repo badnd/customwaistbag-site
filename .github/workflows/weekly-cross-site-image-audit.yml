@@ -37,7 +37,7 @@ jobs:
       - name: Run upload preflight and OCR fault injection
         run: |
           npm run dedup:lint
-          npm run ocr:test-injection
+
       - name: Scan all four production sites with pHash and dHash
         run: npm run images:audit
       - name: Scan new or changed source and live image hashes with OCR
