@@ -6,12 +6,14 @@ const load = async (path) => JSON.parse(await readFile(resolve(root, path), 'utf
 const errors = [];
 const check = (condition, message) => { if (!condition) errors.push(message); };
 
-const [site, routeDocument, entityDocument, productExample, articleExample] = await Promise.all([
+const [site, routeDocument, entityDocument, productExample, articleExample, publishJob, postDeployExample] = await Promise.all([
   load('data/site.json'),
   load('data/routes.json'),
   load('data/entities.json'),
   load('data/examples/product.example.json'),
-  load('data/examples/article.example.json')
+  load('data/examples/article.example.json'),
+  load('data/examples/publish-job.example.json'),
+  load('data/examples/post-deploy-result.example.json')
 ]);
 
 const routes = routeDocument.routes;
@@ -31,6 +33,12 @@ check(site.siteId === 'customwaistbag', 'siteId must be customwaistbag');
 check(site.origin === 'https://www.customwaistbag.com', 'origin must be the canonical www HTTPS origin');
 check(site.publishing.previewNoindex === true, 'Preview must remain noindex');
 check(site.publishing.productionPromotion === 'human-only', 'Production promotion must be human-only');
+check(site.analytics.measurementId === 'G-Z2YYZR4LL0', 'GA4 measurement id must match the approved CWB property');
+check(JSON.stringify(site.analytics.inquiryEvents) === JSON.stringify(['inquiry_form_submit', 'whatsapp_click', 'mailto_click']), 'GA4 inquiry events are incomplete');
+check(site.analytics.collectPii === false, 'Inquiry analytics may not collect PII');
+check(site.postDeploy.indexNow.failurePolicy === 'non-blocking-visible-failure', 'IndexNow failure policy must remain visible and non-blocking');
+check(site.postDeploy.indexNow.skippedIsSuccess === false, 'IndexNow skipped may not be reported as success');
+check(site.postDeploy.cdnPurge.skippedIsSuccess === false, 'CDN purge skipped may not be reported as success');
 check(routes.length === site.baseline.expectedPublicRoutes, `Expected ${site.baseline.expectedPublicRoutes} routes, found ${routes.length}`);
 check(routeByPath.size === routes.length, 'Route paths must be unique');
 check(new Set(routes.map((route) => route.outputFile)).size === routes.length, 'Output files must be unique');
@@ -77,11 +85,28 @@ check(productExample.review.status === 'pending-human', 'Product example must st
 check(productExample.lifecycle.productionApproved === false, 'Product example may not approve Production');
 check(productExample.locales.en && productExample.locales.ru, 'Product example must model EN and RU');
 check(productExample.assets.gallery.length > 0, 'Product example must preserve a gallery');
+check(Number.isInteger(productExample.displayOrder), 'Product example must carry a display order');
+check(productExample.faqs.en && productExample.faqs.ru, 'Product example must model bilingual FAQ data');
+check(JSON.stringify(productExample.structuredData.types) === JSON.stringify(['Product', 'FAQPage', 'BreadcrumbList']), 'Product structured-data types are incomplete');
+check(productExample.discovery.hreflang.en && productExample.discovery.hreflang.ru && productExample.discovery.hreflang['x-default'], 'Product discovery contract must carry EN/RU/x-default');
+for (const asset of [...productExample.assets.gallery, productExample.assets.cardImage]) {
+  check(asset.originalPath && asset.r2Key, 'Every product asset must carry original and R2 paths');
+  check(/^[a-f0-9]{64}$/.test(asset.sha256), 'Every product asset must carry SHA256');
+  check(/^[a-f0-9]{16}$/.test(asset.pHash), 'Every product asset must carry pHash');
+  check(Number.isInteger(asset.order), 'Every product asset must carry an order');
+}
 for (const fact of [productExample.facts.moqPolicy, productExample.facts.sampleLeadTime, productExample.facts.bulkLeadTime, ...productExample.facts.specifications]) {
   check(fact.evidence && fact.reviewStatus, 'Every product fact must carry evidence and review status');
+  check(typeof fact.aiInference === 'boolean', 'Every product fact must identify AI inference state');
 }
 check(articleExample.review.status === 'pending-human', 'Article example must stop at pending-human');
 check(articleExample.lifecycle.productionApproved === false, 'Article example may not approve Production');
+check(publishJob.siteId === 'customwaistbag', 'Publish job must target CWB');
+check(publishJob.approval.status === 'pending-human' && publishJob.approval.productionApproved === false, 'Publish job must stop at human approval');
+check(JSON.stringify(publishJob.pipeline) === JSON.stringify(['asset-intake', 'ocr', 'draft', 'fact-review', 'localize', 'schema', 'sitemap', 'build', 'preview', 'audit', 'human-approval', 'production']), 'Publish pipeline stages are incomplete or reordered');
+for (const checkName of ['ocr', 'dedup', 'pHash', 'seo', 'hreflang', 'schema']) check(publishJob.checks[checkName], `Publish job is missing ${checkName} state`);
+check(postDeployExample.service === 'indexnow', 'Post-deploy example must model IndexNow');
+check(postDeployExample.skipped === true && postDeployExample.ok === false, 'Skipped IndexNow example must not report success');
 
 if (errors.length) {
   console.error(`Static contract validation failed with ${errors.length} issue(s):`);

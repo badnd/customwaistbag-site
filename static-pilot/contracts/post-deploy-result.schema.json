@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.customwaistbag.com/contracts/post-deploy-result.schema.json",
+  "title": "Non-blocking post-deploy result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["service", "attempted", "ok", "skipped", "reason", "urls", "attempts"],
+  "properties": {
+    "service": { "enum": ["indexnow", "cdn-purge"] },
+    "attempted": { "type": "boolean" },
+    "ok": { "type": "boolean" },
+    "skipped": { "type": "boolean" },
+    "reason": { "type": "string", "minLength": 1 },
+    "urls": { "type": "array", "uniqueItems": true, "items": { "type": "string", "format": "uri" } },
+    "attempts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["provider", "ok", "status", "message"],
+        "properties": {
+          "provider": { "enum": ["bing", "yandex", "cloudflare"] },
+          "ok": { "type": "boolean" },
+          "status": { "type": ["integer", "null"] },
+          "message": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

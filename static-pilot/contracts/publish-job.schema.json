@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.customwaistbag.com/contracts/publish-job.schema.json",
+  "title": "Agent publishing job envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["jobId", "siteId", "action", "entityKind", "entityFile", "changedRoutes", "pipeline", "checks", "approval"],
+  "properties": {
+    "jobId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "siteId": { "const": "customwaistbag" },
+    "action": { "enum": ["create", "update", "unpublish", "delete", "redirect"] },
+    "entityKind": { "enum": ["product", "blog", "category", "core-page", "resource-page"] },
+    "entityFile": { "type": "string", "pattern": "^static-pilot/content/[^\\\\]+\\.json$" },
+    "changedRoutes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^/" }
+    },
+    "pipeline": {
+      "const": ["asset-intake", "ocr", "draft", "fact-review", "localize", "schema", "sitemap", "build", "preview", "audit", "human-approval", "production"]
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ocr", "dedup", "pHash", "seo", "hreflang", "schema"],
+      "properties": {
+        "ocr": { "$ref": "#/$defs/checkState" },
+        "dedup": { "$ref": "#/$defs/checkState" },
+        "pHash": { "$ref": "#/$defs/checkState" },
+        "seo": { "$ref": "#/$defs/checkState" },
+        "hreflang": { "$ref": "#/$defs/checkState" },
+        "schema": { "$ref": "#/$defs/checkState" }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "productionApproved"],
+      "properties": {
+        "status": { "enum": ["pending-human", "approved", "rejected"] },
+        "productionApproved": { "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "checkState": { "enum": ["pending", "passed", "failed", "human-review"] }
+  }
+}

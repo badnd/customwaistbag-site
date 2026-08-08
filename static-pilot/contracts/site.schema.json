@@ -13,7 +13,9 @@
     "contact",
     "baseline",
     "publishing",
-    "approvalPolicy"
+    "approvalPolicy",
+    "analytics",
+    "postDeploy"
   ],
   "properties": {
     "contractVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
@@ -78,6 +80,27 @@
         "agentMayPrepare": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
       }
     },
+    "analytics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["measurementId", "inquiryEvents", "collectPii"],
+      "properties": {
+        "measurementId": { "const": "G-Z2YYZR4LL0" },
+        "inquiryEvents": {
+          "const": ["inquiry_form_submit", "whatsapp_click", "mailto_click"]
+        },
+        "collectPii": { "const": false }
+      }
+    },
+    "postDeploy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["indexNow", "cdnPurge"],
+      "properties": {
+        "indexNow": { "$ref": "#/$defs/nonBlockingNotification" },
+        "cdnPurge": { "$ref": "#/$defs/nonBlockingNotification" }
+      }
+    },
     "approvedMigrationFixes": {
       "type": "array",
       "items": {
@@ -89,6 +112,18 @@
           "status": { "const": "operator-approved-for-migration" },
           "description": { "type": "string" }
         }
+      }
+    }
+  },
+  "$defs": {
+    "nonBlockingNotification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["productionOnly", "failurePolicy", "skippedIsSuccess"],
+      "properties": {
+        "productionOnly": { "const": true },
+        "failurePolicy": { "const": "non-blocking-visible-failure" },
+        "skippedIsSuccess": { "const": false }
       }
     }
   }

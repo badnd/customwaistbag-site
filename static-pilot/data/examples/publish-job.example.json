@@ -1,0 +1,37 @@
+{
+  "jobId": "example-product-create",
+  "siteId": "customwaistbag",
+  "action": "create",
+  "entityKind": "product",
+  "entityFile": "static-pilot/content/products/example-running-waist-bag.json",
+  "changedRoutes": [
+    "/products/example-running-waist-bag",
+    "/ru/products/example-running-waist-bag"
+  ],
+  "pipeline": [
+    "asset-intake",
+    "ocr",
+    "draft",
+    "fact-review",
+    "localize",
+    "schema",
+    "sitemap",
+    "build",
+    "preview",
+    "audit",
+    "human-approval",
+    "production"
+  ],
+  "checks": {
+    "ocr": "pending",
+    "dedup": "pending",
+    "pHash": "pending",
+    "seo": "pending",
+    "hreflang": "pending",
+    "schema": "pending"
+  },
+  "approval": {
+    "status": "pending-human",
+    "productionApproved": false
+  }
+}

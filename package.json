@@ -12,7 +12,9 @@
     "images:audit": "node scripts/image-perceptual-audit.mjs --scan",
     "cdn:purge": "node scripts/purge-cdn-cache.mjs",
     "static:contract:validate": "node scripts/static/validate-contract.mjs",
-    "static:preview:build": "node scripts/static/build-preview.mjs"
+    "static:preview:build": "node scripts/static/build-preview.mjs",
+    "static:analytics:test": "node scripts/static/test-inquiry-analytics.mjs",
+    "static:preflight": "npm run static:contract:validate && npm run dedup:lint && npm run images:audit"
   },
   "dependencies": {
     "next": "16.2.9",

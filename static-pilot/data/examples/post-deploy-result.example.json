@@ -1,0 +1,9 @@
+{
+  "service": "indexnow",
+  "attempted": false,
+  "ok": false,
+  "skipped": true,
+  "reason": "missing_indexnow_key",
+  "urls": [],
+  "attempts": []
+}

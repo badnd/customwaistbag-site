@@ -4,6 +4,7 @@
   "category": "running-waist-bags",
   "slug": "example-running-waist-bag",
   "publishedAt": "2026-08-02",
+  "displayOrder": 0,
   "locales": {
     "en": {
       "title": "Example Running Waist Bag",
@@ -20,19 +21,31 @@
       "intro": "Эта запись показывает обязательные поля автоматизации."
     }
   },
+  "faqs": {
+    "en": [],
+    "ru": []
+  },
   "assets": {
     "gallery": [
       {
         "url": "https://images.customwaistbag.com/assets/examples/not-for-publication.webp",
+        "originalPath": "operator-package/not-for-publication.webp",
+        "r2Key": "assets/examples/not-for-publication.webp",
         "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "pHash": "0000000000000000",
         "alt": "Architecture example asset",
+        "order": 0,
         "ocrStatus": "pending-human"
       }
     ],
     "cardImage": {
       "url": "https://images.customwaistbag.com/assets/examples/not-for-publication.webp",
+      "originalPath": "operator-package/not-for-publication.webp",
+      "r2Key": "assets/examples/not-for-publication.webp",
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "pHash": "0000000000000000",
       "alt": "Architecture example card asset",
+      "order": 0,
       "ocrStatus": "pending-human"
     }
   },
@@ -42,24 +55,48 @@
         "label": "Material",
         "value": "Pending operator confirmation",
         "evidence": "No supplier package attached to architecture example",
-        "reviewStatus": "pending-human"
+        "reviewStatus": "pending-human",
+        "aiInference": false,
+        "pendingReason": "Architecture example has no supplier evidence"
       }
     ],
     "moqPolicy": {
       "value": "Pending operator confirmation",
       "evidence": "No supplier package attached to architecture example",
-      "reviewStatus": "pending-human"
+      "reviewStatus": "pending-human",
+      "aiInference": false,
+      "pendingReason": "Architecture example has no supplier evidence"
     },
     "sampleLeadTime": {
       "value": "Pending operator confirmation",
       "evidence": "No supplier package attached to architecture example",
-      "reviewStatus": "pending-human"
+      "reviewStatus": "pending-human",
+      "aiInference": false,
+      "pendingReason": "Architecture example has no supplier evidence"
     },
     "bulkLeadTime": {
       "value": "Pending operator confirmation",
       "evidence": "No supplier package attached to architecture example",
-      "reviewStatus": "pending-human"
+      "reviewStatus": "pending-human",
+      "aiInference": false,
+      "pendingReason": "Architecture example has no supplier evidence"
     }
+  },
+  "structuredData": {
+    "types": ["Product", "FAQPage", "BreadcrumbList"],
+    "breadcrumbs": [
+      { "name": "Home", "url": "https://www.customwaistbag.com/" },
+      { "name": "Products", "url": "https://www.customwaistbag.com/products" }
+    ]
+  },
+  "discovery": {
+    "includeInSitemap": false,
+    "hreflang": {
+      "en": "https://www.customwaistbag.com/products/example-running-waist-bag",
+      "ru": "https://www.customwaistbag.com/ru/products/example-running-waist-bag",
+      "x-default": "https://www.customwaistbag.com/products/example-running-waist-bag"
+    },
+    "relatedProducts": []
   },
   "provenance": {
     "sourcePackage": "architecture-example-only",

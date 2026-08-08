@@ -1,5 +1,5 @@
 {
-  "contractVersion": "1.0.0",
+  "contractVersion": "1.1.0",
   "siteId": "customwaistbag",
   "origin": "https://www.customwaistbag.com",
   "assetOrigins": [
@@ -64,6 +64,23 @@
       "preview-build",
       "audit-report"
     ]
+  },
+  "analytics": {
+    "measurementId": "G-Z2YYZR4LL0",
+    "inquiryEvents": ["inquiry_form_submit", "whatsapp_click", "mailto_click"],
+    "collectPii": false
+  },
+  "postDeploy": {
+    "indexNow": {
+      "productionOnly": true,
+      "failurePolicy": "non-blocking-visible-failure",
+      "skippedIsSuccess": false
+    },
+    "cdnPurge": {
+      "productionOnly": true,
+      "failurePolicy": "non-blocking-visible-failure",
+      "skippedIsSuccess": false
+    }
   },
   "approvedMigrationFixes": [
     {

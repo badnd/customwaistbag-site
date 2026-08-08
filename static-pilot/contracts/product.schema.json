@@ -4,13 +4,14 @@
   "title": "Agent-ready product source package",
   "type": "object",
   "additionalProperties": false,
-  "required": ["kind", "model", "category", "slug", "publishedAt", "locales", "assets", "facts", "provenance", "review", "lifecycle"],
+  "required": ["kind", "model", "category", "slug", "publishedAt", "displayOrder", "locales", "faqs", "assets", "facts", "structuredData", "discovery", "provenance", "review", "lifecycle"],
   "properties": {
     "kind": { "const": "product" },
     "model": { "type": "string", "pattern": "^[A-Z0-9-]+$" },
     "category": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "publishedAt": { "type": "string", "format": "date" },
+    "displayOrder": { "type": "integer", "minimum": 0 },
     "locales": {
       "type": "object",
       "additionalProperties": false,
@@ -18,6 +19,15 @@
       "properties": {
         "en": { "$ref": "#/$defs/localeContent" },
         "ru": { "$ref": "#/$defs/localeContent" }
+      }
+    },
+    "faqs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "ru"],
+      "properties": {
+        "en": { "type": "array", "items": { "$ref": "#/$defs/faq" } },
+        "ru": { "type": "array", "items": { "$ref": "#/$defs/faq" } }
       }
     },
     "assets": {
@@ -40,6 +50,44 @@
         "bulkLeadTime": { "$ref": "#/$defs/fact" }
       }
     },
+    "structuredData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["types", "breadcrumbs"],
+      "properties": {
+        "types": {
+          "const": ["Product", "FAQPage", "BreadcrumbList"]
+        },
+        "breadcrumbs": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/breadcrumb" }
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["includeInSitemap", "hreflang", "relatedProducts"],
+      "properties": {
+        "includeInSitemap": { "type": "boolean" },
+        "hreflang": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["en", "ru", "x-default"],
+          "properties": {
+            "en": { "type": "string", "format": "uri" },
+            "ru": { "type": "string", "format": "uri" },
+            "x-default": { "type": "string", "format": "uri" }
+          }
+        },
+        "relatedProducts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        }
+      }
+    },
     "provenance": { "$ref": "#/$defs/provenance" },
     "review": { "$ref": "#/$defs/review" },
     "lifecycle": { "$ref": "#/$defs/lifecycle" }
@@ -60,23 +108,59 @@
     "asset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["url", "sha256", "alt", "ocrStatus"],
+      "required": ["url", "originalPath", "r2Key", "sha256", "pHash", "alt", "order", "ocrStatus"],
       "properties": {
         "url": { "type": "string", "format": "uri" },
+        "originalPath": { "type": "string", "minLength": 1 },
+        "r2Key": { "type": "string", "minLength": 1 },
         "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "pHash": { "type": "string", "pattern": "^[a-f0-9]{16}$" },
         "alt": { "type": "string", "minLength": 1 },
-        "ocrStatus": { "enum": ["passed", "pending-human", "blocked"] }
+        "order": { "type": "integer", "minimum": 0 },
+        "ocrStatus": { "enum": ["passed", "pending-human", "blocked", "exempted"] },
+        "ocrExemption": { "$ref": "#/$defs/ocrExemption" }
       }
     },
     "fact": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["value", "evidence", "reviewStatus"],
+      "required": ["value", "evidence", "reviewStatus", "aiInference"],
       "properties": {
         "label": { "type": "string" },
         "value": { "type": "string", "minLength": 1 },
         "evidence": { "type": "string", "minLength": 1 },
-        "reviewStatus": { "enum": ["confirmed", "pending-human", "rejected"] }
+        "reviewStatus": { "enum": ["confirmed", "pending-human", "rejected"] },
+        "aiInference": { "type": "boolean" },
+        "pendingReason": { "type": "string" }
+      }
+    },
+    "faq": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "answer"],
+      "properties": {
+        "question": { "type": "string", "minLength": 1 },
+        "answer": { "type": "string", "minLength": 1 }
+      }
+    },
+    "breadcrumb": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "ocrExemption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reason", "boundSha256", "boundPHash", "approvedBy"],
+      "properties": {
+        "reason": { "type": "string", "minLength": 1 },
+        "boundSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "boundPHash": { "type": "string", "pattern": "^[a-f0-9]{16}$" },
+        "approvedBy": { "type": "string", "minLength": 1 }
       }
     },
     "provenance": {
