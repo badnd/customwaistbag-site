@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.customwaistbag.com/contracts/site.schema.json",
+  "title": "CWB static site contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractVersion",
+    "siteId",
+    "origin",
+    "assetOrigins",
+    "languages",
+    "contact",
+    "baseline",
+    "publishing",
+    "approvalPolicy"
+  ],
+  "properties": {
+    "contractVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "siteId": { "const": "customwaistbag" },
+    "origin": { "const": "https://www.customwaistbag.com" },
+    "assetOrigins": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "languages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default", "supported", "xDefault"],
+      "properties": {
+        "default": { "const": "en" },
+        "supported": { "const": ["en", "ru"] },
+        "xDefault": { "const": "en" }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["email", "whatsapp", "wechat", "sourceLabel"],
+      "properties": {
+        "email": { "const": "annawei@nameerbag.com" },
+        "whatsapp": { "const": "8615102249548" },
+        "wechat": { "const": "15102249548" },
+        "sourceLabel": { "const": "customwaistbag.com" }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["productionCommit", "capturedAt", "expectedPublicRoutes", "expectedMediaResources"],
+      "properties": {
+        "productionCommit": { "const": "7b73675db9f94ac06602875f6970a7de191ee909" },
+        "capturedAt": { "type": "string", "format": "date-time" },
+        "expectedPublicRoutes": { "const": 54 },
+        "expectedMediaResources": { "const": 69 }
+      }
+    },
+    "publishing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonicalHost", "trailingSlash", "previewNoindex", "productionPromotion"],
+      "properties": {
+        "canonicalHost": { "const": "www.customwaistbag.com" },
+        "trailingSlash": { "const": false },
+        "previewNoindex": { "const": true },
+        "productionPromotion": { "const": "human-only" }
+      }
+    },
+    "approvalPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["factsRequireEvidence", "humanOnlyActions", "agentMayPrepare"],
+      "properties": {
+        "factsRequireEvidence": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "humanOnlyActions": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "agentMayPrepare": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
+      }
+    },
+    "approvedMigrationFixes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "status": { "const": "operator-approved-for-migration" },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

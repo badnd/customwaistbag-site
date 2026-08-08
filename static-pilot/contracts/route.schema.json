@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.customwaistbag.com/contracts/route.schema.json",
+  "title": "CWB static route record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "path",
+    "outputFile",
+    "locale",
+    "pageType",
+    "contentRef",
+    "canonical",
+    "alternates",
+    "seo",
+    "baseline",
+    "lifecycle"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9:_-]*$" },
+    "path": { "type": "string", "pattern": "^/" },
+    "outputFile": { "type": "string", "pattern": "(^|/)index\\.html$" },
+    "locale": { "enum": ["en", "ru"] },
+    "pageType": { "enum": ["home", "core", "resource-index", "category", "product", "resource-page", "blog-index", "blog-article"] },
+    "contentRef": { "type": "string", "minLength": 3 },
+    "canonical": { "type": "string", "format": "uri" },
+    "alternates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "format": "uri" },
+        "ru": { "type": "string", "format": "uri" },
+        "x-default": { "type": "string", "format": "uri" }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description", "h1", "schemaTypes"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "h1": { "type": "string", "minLength": 1 },
+        "schemaTypes": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "htmlSha256", "bodyTextSha256"],
+      "properties": {
+        "status": { "const": 200 },
+        "htmlSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "bodyTextSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "urlChangeRequiresHumanApproval"],
+      "properties": {
+        "status": { "const": "published-baseline" },
+        "urlChangeRequiresHumanApproval": { "const": true }
+      }
+    }
+  }
+}

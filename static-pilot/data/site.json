@@ -1,0 +1,80 @@
+{
+  "contractVersion": "1.0.0",
+  "siteId": "customwaistbag",
+  "origin": "https://www.customwaistbag.com",
+  "assetOrigins": [
+    "https://images.customwaistbag.com"
+  ],
+  "languages": {
+    "default": "en",
+    "supported": ["en", "ru"],
+    "xDefault": "en"
+  },
+  "contact": {
+    "email": "annawei@nameerbag.com",
+    "whatsapp": "8615102249548",
+    "wechat": "15102249548",
+    "sourceLabel": "customwaistbag.com"
+  },
+  "baseline": {
+    "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+    "capturedAt": "2026-08-02T09:50:19.393Z",
+    "expectedPublicRoutes": 54,
+    "expectedMediaResources": 69
+  },
+  "publishing": {
+    "canonicalHost": "www.customwaistbag.com",
+    "trailingSlash": false,
+    "previewNoindex": true,
+    "productionPromotion": "human-only"
+  },
+  "approvalPolicy": {
+    "factsRequireEvidence": [
+      "moq",
+      "certifications",
+      "public-price",
+      "factory-age",
+      "factory-area",
+      "capacity",
+      "sample-fee-policy",
+      "sample-lead-time",
+      "bulk-lead-time",
+      "materials",
+      "dimensions"
+    ],
+    "humanOnlyActions": [
+      "publish-production",
+      "delete-or-unpublish",
+      "change-published-url",
+      "create-redirect",
+      "cross-site-migration",
+      "change-contact-details",
+      "change-domain-or-dns",
+      "rotate-or-use-credentials",
+      "send-real-inquiry",
+      "commit-price-or-delivery"
+    ],
+    "agentMayPrepare": [
+      "ocr-scan",
+      "asset-manifest",
+      "draft-en",
+      "draft-ru",
+      "schema",
+      "sitemap-entry",
+      "preview-build",
+      "audit-report"
+    ]
+  },
+  "approvedMigrationFixes": [
+    {
+      "id": "ru-privacy-mobile-overflow",
+      "status": "operator-approved-for-migration",
+      "description": "Remove the existing 25px mobile overflow on /ru/privacy-policy while preserving its URL and content."
+    },
+    {
+      "id": "contact-bare-mailto-source",
+      "status": "operator-approved-for-migration",
+      "description": "Add the CWB source subject to the two existing bare mailto links on EN/RU Contact pages."
+    }
+  ]
+}

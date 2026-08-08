@@ -1,0 +1,41 @@
+{
+  "kind": "blog",
+  "slug": "example-article-not-for-publication",
+  "publishedAt": "2026-08-02",
+  "locales": {
+    "en": {
+      "title": "Architecture Example Article",
+      "metaTitle": "Architecture Example Article | Custom Waist Bag",
+      "description": "A non-public example of the static article data contract.",
+      "h1": "Architecture Example Article",
+      "blocks": [
+        { "type": "paragraph", "text": "This record is not approved for publication." }
+      ]
+    }
+  },
+  "hero": {
+    "url": "https://images.customwaistbag.com/assets/examples/not-for-publication.webp",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "alt": "Architecture example article asset",
+    "ocrStatus": "pending-human"
+  },
+  "schema": {
+    "types": ["BlogPosting", "FAQPage", "BreadcrumbList"]
+  },
+  "provenance": {
+    "sourcePackage": "architecture-example-only",
+    "receivedAt": "2026-08-02T00:00:00Z",
+    "operatorStatement": "Not approved for publication"
+  },
+  "review": {
+    "status": "pending-human",
+    "facts": "pending-human",
+    "translation": "pending-human",
+    "seo": "pending-human",
+    "assets": "pending-human"
+  },
+  "lifecycle": {
+    "action": "create",
+    "productionApproved": false
+  }
+}

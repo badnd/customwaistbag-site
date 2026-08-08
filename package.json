@@ -10,7 +10,9 @@
     "dedup:lint": "node scripts/dedup-upload-lint.mjs --self-test && node scripts/image-ocr-guard.mjs --preflight",
     "ocr:guard": "node scripts/image-ocr-guard.mjs --preflight",
     "images:audit": "node scripts/image-perceptual-audit.mjs --scan",
-    "cdn:purge": "node scripts/purge-cdn-cache.mjs"
+    "cdn:purge": "node scripts/purge-cdn-cache.mjs",
+    "static:contract:validate": "node scripts/static/validate-contract.mjs",
+    "static:preview:build": "node scripts/static/build-preview.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

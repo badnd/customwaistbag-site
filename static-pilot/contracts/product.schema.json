@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.customwaistbag.com/contracts/product.schema.json",
+  "title": "Agent-ready product source package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "model", "category", "slug", "publishedAt", "locales", "assets", "facts", "provenance", "review", "lifecycle"],
+  "properties": {
+    "kind": { "const": "product" },
+    "model": { "type": "string", "pattern": "^[A-Z0-9-]+$" },
+    "category": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "publishedAt": { "type": "string", "format": "date" },
+    "locales": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "ru"],
+      "properties": {
+        "en": { "$ref": "#/$defs/localeContent" },
+        "ru": { "$ref": "#/$defs/localeContent" }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gallery", "cardImage"],
+      "properties": {
+        "gallery": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/asset" } },
+        "cardImage": { "$ref": "#/$defs/asset" }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["specifications", "moqPolicy", "sampleLeadTime", "bulkLeadTime"],
+      "properties": {
+        "specifications": { "type": "array", "items": { "$ref": "#/$defs/fact" } },
+        "moqPolicy": { "$ref": "#/$defs/fact" },
+        "sampleLeadTime": { "$ref": "#/$defs/fact" },
+        "bulkLeadTime": { "$ref": "#/$defs/fact" }
+      }
+    },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "review": { "$ref": "#/$defs/review" },
+    "lifecycle": { "$ref": "#/$defs/lifecycle" }
+  },
+  "$defs": {
+    "localeContent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "metaTitle", "description", "h1", "intro"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "metaTitle": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "h1": { "type": "string", "minLength": 1 },
+        "intro": { "type": "string", "minLength": 1 }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "sha256", "alt", "ocrStatus"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "alt": { "type": "string", "minLength": 1 },
+        "ocrStatus": { "enum": ["passed", "pending-human", "blocked"] }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "evidence", "reviewStatus"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "string", "minLength": 1 },
+        "reviewStatus": { "enum": ["confirmed", "pending-human", "rejected"] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourcePackage", "receivedAt", "operatorStatement"],
+      "properties": {
+        "sourcePackage": { "type": "string", "minLength": 1 },
+        "receivedAt": { "type": "string", "format": "date-time" },
+        "operatorStatement": { "type": "string", "minLength": 1 }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "facts", "translation", "seo", "assets"],
+      "properties": {
+        "status": { "enum": ["pending-human", "approved", "rejected"] },
+        "facts": { "enum": ["pending-human", "approved", "rejected"] },
+        "translation": { "enum": ["pending-human", "approved", "rejected"] },
+        "seo": { "enum": ["pending-human", "approved", "rejected"] },
+        "assets": { "enum": ["pending-human", "approved", "rejected"] }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "productionApproved"],
+      "properties": {
+        "action": { "enum": ["create", "update", "unpublish", "delete", "redirect"] },
+        "productionApproved": { "const": false }
+      }
+    }
+  }
+}

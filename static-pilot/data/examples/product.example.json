@@ -1,0 +1,80 @@
+{
+  "kind": "product",
+  "model": "EXAMPLE-001",
+  "category": "running-waist-bags",
+  "slug": "example-running-waist-bag",
+  "publishedAt": "2026-08-02",
+  "locales": {
+    "en": {
+      "title": "Example Running Waist Bag",
+      "metaTitle": "Example Running Waist Bag | Custom Waist Bag",
+      "description": "Architecture-only example. It is not public product content.",
+      "h1": "Example Running Waist Bag",
+      "intro": "This record demonstrates the required automation fields."
+    },
+    "ru": {
+      "title": "Пример беговой поясной сумки",
+      "metaTitle": "Пример беговой поясной сумки | Custom Waist Bag",
+      "description": "Пример структуры данных, не предназначенный для публикации.",
+      "h1": "Пример беговой поясной сумки",
+      "intro": "Эта запись показывает обязательные поля автоматизации."
+    }
+  },
+  "assets": {
+    "gallery": [
+      {
+        "url": "https://images.customwaistbag.com/assets/examples/not-for-publication.webp",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "alt": "Architecture example asset",
+        "ocrStatus": "pending-human"
+      }
+    ],
+    "cardImage": {
+      "url": "https://images.customwaistbag.com/assets/examples/not-for-publication.webp",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "alt": "Architecture example card asset",
+      "ocrStatus": "pending-human"
+    }
+  },
+  "facts": {
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Pending operator confirmation",
+        "evidence": "No supplier package attached to architecture example",
+        "reviewStatus": "pending-human"
+      }
+    ],
+    "moqPolicy": {
+      "value": "Pending operator confirmation",
+      "evidence": "No supplier package attached to architecture example",
+      "reviewStatus": "pending-human"
+    },
+    "sampleLeadTime": {
+      "value": "Pending operator confirmation",
+      "evidence": "No supplier package attached to architecture example",
+      "reviewStatus": "pending-human"
+    },
+    "bulkLeadTime": {
+      "value": "Pending operator confirmation",
+      "evidence": "No supplier package attached to architecture example",
+      "reviewStatus": "pending-human"
+    }
+  },
+  "provenance": {
+    "sourcePackage": "architecture-example-only",
+    "receivedAt": "2026-08-02T00:00:00Z",
+    "operatorStatement": "Not approved for publication"
+  },
+  "review": {
+    "status": "pending-human",
+    "facts": "pending-human",
+    "translation": "pending-human",
+    "seo": "pending-human",
+    "assets": "pending-human"
+  },
+  "lifecycle": {
+    "action": "create",
+    "productionApproved": false
+  }
+}

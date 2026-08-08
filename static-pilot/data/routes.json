@@ -1,0 +1,1727 @@
+{
+  "contractVersion": "1.0.0",
+  "routes": [
+    {
+      "id": "home:en",
+      "path": "/",
+      "outputFile": "index.html",
+      "locale": "en",
+      "pageType": "home",
+      "contentRef": "page:home",
+      "canonical": "https://www.customwaistbag.com/",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/",
+        "ru": "https://www.customwaistbag.com/ru",
+        "x-default": "https://www.customwaistbag.com/"
+      },
+      "seo": {
+        "title": "Custom Waist Bag Manufacturer | Sampling Support",
+        "description": "Waist bag specialist for private-label buyers, with MOQ tiers from 50 pcs, 7-15 day sampling and OEM/ODM support.",
+        "h1": "We Keep Refining the Sample Until the Waist Bag Feels Right",
+        "schemaTypes": [
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "d263a6211f9e663cf451529c10b78f42bfb23f04320301789fbdff1fc4def396",
+        "bodyTextSha256": "c26507d1cd6465785b5715411edb2c1b41659bfa1128b3866eba42563085c1b1"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "home:ru",
+      "path": "/ru",
+      "outputFile": "ru/index.html",
+      "locale": "ru",
+      "pageType": "home",
+      "contentRef": "page:home",
+      "canonical": "https://www.customwaistbag.com/ru",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/",
+        "ru": "https://www.customwaistbag.com/ru",
+        "x-default": "https://www.customwaistbag.com/"
+      },
+      "seo": {
+        "title": "Производитель поясных сумок | Custom Waist Bag",
+        "description": "Специализация на конструкции поясных сумок и сопровождении образцов.",
+        "h1": "Дорабатываем образец, пока поясная сумка не станет действительно удобной",
+        "schemaTypes": [
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "ca09b767ea555ce8bb4c4efc555b1fde59b990b72c28ee8829dfc979b125b027",
+        "bodyTextSha256": "2ea72d5d5c0d62527e67a9ce7a646634cf1f3df242f0124f6379a1b37dc33e1b"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "about:en",
+      "path": "/about",
+      "outputFile": "about/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:about",
+      "canonical": "https://www.customwaistbag.com/about",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/about",
+        "ru": "https://www.customwaistbag.com/ru/about",
+        "x-default": "https://www.customwaistbag.com/about"
+      },
+      "seo": {
+        "title": "A Three-Month Sampling Story | Custom Waist Bag",
+        "description": "One 1,000-piece first order taught us what design partnership means in practice.",
+        "h1": "A Three-Month Sampling Story",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "28a659f910c87c76c2be6ea3e868a01334dd45f7feb692a67e3ad8c97aa7c7d9",
+        "bodyTextSha256": "501b018c0bc901618aa8c5e808fce43eeab7fe6b3254ee81d357f5c1ba018ca9"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "about:ru",
+      "path": "/ru/about",
+      "outputFile": "ru/about/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:about",
+      "canonical": "https://www.customwaistbag.com/ru/about",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/about",
+        "ru": "https://www.customwaistbag.com/ru/about",
+        "x-default": "https://www.customwaistbag.com/about"
+      },
+      "seo": {
+        "title": "История трех месяцев работы над образцами | Custom Waist Bag",
+        "description": "Один первый заказ на 1 000 изделий помог определить наш подход к сопровождению дизайна.",
+        "h1": "История трех месяцев работы над образцами",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "b9323674b2124a2cdf975d25c6fc5828d2bc41a4dddca1e75f6df4a4f56b8dfc",
+        "bodyTextSha256": "d24254876f592547d0b3644affa0690146cad3fc4342cdef9e558d5ced4e3a3f"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "factory:en",
+      "path": "/factory",
+      "outputFile": "factory/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:factory",
+      "canonical": "https://www.customwaistbag.com/factory",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/factory",
+        "ru": "https://www.customwaistbag.com/ru/factory",
+        "x-default": "https://www.customwaistbag.com/factory"
+      },
+      "seo": {
+        "title": "Waist Bag Production, Shown Honestly | Custom Waist Bag",
+        "description": "We show the production views we have, and do not assign missing cutting or packing photos to the wrong stage.",
+        "h1": "Waist Bag Production, Shown Honestly",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "0053dc7d0a309aef9053142398f1525e6d89269a4ba40d3931654301985978fa",
+        "bodyTextSha256": "dcf4b43f9f0d1decce31054b729ade438a96351fb11a2c71a3287384fd8f030a"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "factory:ru",
+      "path": "/ru/factory",
+      "outputFile": "ru/factory/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:factory",
+      "canonical": "https://www.customwaistbag.com/ru/factory",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/factory",
+        "ru": "https://www.customwaistbag.com/ru/factory",
+        "x-default": "https://www.customwaistbag.com/factory"
+      },
+      "seo": {
+        "title": "Производство поясных сумок без подмены этапов | Custom Waist Bag",
+        "description": "Показываем только подтвержденные производственные процессы и не выдаем отсутствующие фотографии за другие этапы.",
+        "h1": "Производство поясных сумок без подмены этапов",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "0f5779d96aceeb009ccdeae4f462cf3ebd75c56285ddd288fe781566db331fcd",
+        "bodyTextSha256": "0e31e38202d9148f00f9031754152e2a731532727dc209cba6c0919162a36e3e"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "custom-logo:en",
+      "path": "/custom-logo",
+      "outputFile": "custom-logo/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:custom-logo",
+      "canonical": "https://www.customwaistbag.com/custom-logo",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/custom-logo",
+        "ru": "https://www.customwaistbag.com/ru/custom-logo",
+        "x-default": "https://www.customwaistbag.com/custom-logo"
+      },
+      "seo": {
+        "title": "Custom Logo and Trim Options | Custom Waist Bag",
+        "description": "Choose a method that fits the artwork, material and intended use.",
+        "h1": "Custom Logo and Trim Options",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "dec4f5ceac87aedd9d0dbe6067945c5605cdd7f9742061e075b670eb7b3f0753",
+        "bodyTextSha256": "bcaf303f912a0db77d7fffb65acdc8a27ad02482f1b3701d0b7e61a1fdf3870f"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "custom-logo:ru",
+      "path": "/ru/custom-logo",
+      "outputFile": "ru/custom-logo/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:custom-logo",
+      "canonical": "https://www.customwaistbag.com/ru/custom-logo",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/custom-logo",
+        "ru": "https://www.customwaistbag.com/ru/custom-logo",
+        "x-default": "https://www.customwaistbag.com/custom-logo"
+      },
+      "seo": {
+        "title": "Логотип и элементы отделки | Custom Waist Bag",
+        "description": "Выберите способ, который подходит макету, материалу и назначению изделия.",
+        "h1": "Логотип и элементы отделки",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "20e71cef8849b231b70924c5ff6c6d557359f864e9dd2d05a0f48395c31bc076",
+        "bodyTextSha256": "24158f658214e18b4d821cb6ecc83f75280378c96e131ac7089a46fdd076c9e9"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "full-print:en",
+      "path": "/full-print",
+      "outputFile": "full-print/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:full-print",
+      "canonical": "https://www.customwaistbag.com/full-print",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/full-print",
+        "ru": "https://www.customwaistbag.com/ru/full-print",
+        "x-default": "https://www.customwaistbag.com/full-print"
+      },
+      "seo": {
+        "title": "Full-Print Waist Bag Development | Custom Waist Bag",
+        "description": "Artwork, panel placement and construction are reviewed together before sampling.",
+        "h1": "Full-Print Waist Bag Development",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "5cb7e329be388a145f98b5407d8a9cfce8c6ebda20c501930835fd1c60bc75e8",
+        "bodyTextSha256": "6b0c72b73b4104e69619ba09b352c1f3d59d4b1d44111d2d069181c03f0a7a86"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "full-print:ru",
+      "path": "/ru/full-print",
+      "outputFile": "ru/full-print/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:full-print",
+      "canonical": "https://www.customwaistbag.com/ru/full-print",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/full-print",
+        "ru": "https://www.customwaistbag.com/ru/full-print",
+        "x-default": "https://www.customwaistbag.com/full-print"
+      },
+      "seo": {
+        "title": "Полная запечатка поясных сумок | Custom Waist Bag",
+        "description": "Рисунок, расположение деталей и конструкция проверяются вместе до изготовления образца.",
+        "h1": "Полная запечатка поясных сумок",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "80f5daffc4001d9e1b00fa6fd775f9cfb4bb863d001d646dce0471f195e325d9",
+        "bodyTextSha256": "dbfce857b41c0700d66a7591ff1b61cba75fb1143eaae403c722cc95dea3024f"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "oem-odm:en",
+      "path": "/oem-odm",
+      "outputFile": "oem-odm/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:oem-odm",
+      "canonical": "https://www.customwaistbag.com/oem-odm",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/oem-odm",
+        "ru": "https://www.customwaistbag.com/ru/oem-odm",
+        "x-default": "https://www.customwaistbag.com/oem-odm"
+      },
+      "seo": {
+        "title": "OEM and ODM Sampling Process | Custom Waist Bag",
+        "description": "A practical path from reference to approved waist bag sample.",
+        "h1": "OEM and ODM Sampling Process",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "cc30353a2d3163700711d17285c51fdbaa5c0379204a3f9e331c6e3de96a47a1",
+        "bodyTextSha256": "5e5862f355baa6198e7a36ce2b922ca3f4edecfbdd92d7dbab179bb977ea9f9b"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "oem-odm:ru",
+      "path": "/ru/oem-odm",
+      "outputFile": "ru/oem-odm/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:oem-odm",
+      "canonical": "https://www.customwaistbag.com/ru/oem-odm",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/oem-odm",
+        "ru": "https://www.customwaistbag.com/ru/oem-odm",
+        "x-default": "https://www.customwaistbag.com/oem-odm"
+      },
+      "seo": {
+        "title": "Процесс изготовления образца OEM и ODM | Custom Waist Bag",
+        "description": "Практический путь от референса до утвержденного образца поясной сумки.",
+        "h1": "Процесс изготовления образца OEM и ODM",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "f9943e44875e89770f2a66a9f72b65dbab1e1c2de0cdec7eb2a3c84452f77a9c",
+        "bodyTextSha256": "8de3fd36cd2a5951e9828f8c612b2f5a4bb36d79aa00c62b16f1eb4f3965e853"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "faq:en",
+      "path": "/faq",
+      "outputFile": "faq/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:faq",
+      "canonical": "https://www.customwaistbag.com/faq",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/faq",
+        "ru": "https://www.customwaistbag.com/ru/faq",
+        "x-default": "https://www.customwaistbag.com/faq"
+      },
+      "seo": {
+        "title": "Waist Bag Ordering FAQ | Custom Waist Bag",
+        "description": "Specific answers for sourcing and planning.",
+        "h1": "Waist Bag Ordering FAQ",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "48de379ec552020324314f6c1beb746dbf799f067694ce1c65b792d1d4265be3",
+        "bodyTextSha256": "003ff83ca1e06ba3f504cad824baf8dc0129183e3c562e48a84540b3e8b027a0"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "faq:ru",
+      "path": "/ru/faq",
+      "outputFile": "ru/faq/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:faq",
+      "canonical": "https://www.customwaistbag.com/ru/faq",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/faq",
+        "ru": "https://www.customwaistbag.com/ru/faq",
+        "x-default": "https://www.customwaistbag.com/faq"
+      },
+      "seo": {
+        "title": "Частые вопросы о заказе поясных сумок | Custom Waist Bag",
+        "description": "Конкретные ответы для закупки и планирования.",
+        "h1": "Частые вопросы о заказе поясных сумок",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "250b10f35fd863a1da7c80161cff3629517be177a79cf6c9abede48f96c2c000",
+        "bodyTextSha256": "2934d9131939390bb65f1fd14e808779f9aa1b253da5dde619e777c5be7cac38"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "contact:en",
+      "path": "/contact",
+      "outputFile": "contact/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:contact",
+      "canonical": "https://www.customwaistbag.com/contact",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/contact",
+        "ru": "https://www.customwaistbag.com/ru/contact",
+        "x-default": "https://www.customwaistbag.com/contact"
+      },
+      "seo": {
+        "title": "Send Your Waist Bag Brief | Custom Waist Bag",
+        "description": "Anna Wei will review your reference, quantity and customization details.",
+        "h1": "Send Your Waist Bag Brief",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "48f042673f225bfd9dcfd5b34d8bb3b864d021e4687ddf80fab9b61ba10a8d83",
+        "bodyTextSha256": "dd93b87f0d12d57cd1e376445fb5d66aa8360e350cd88b38bf4ccaa90ca43527"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "contact:ru",
+      "path": "/ru/contact",
+      "outputFile": "ru/contact/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:contact",
+      "canonical": "https://www.customwaistbag.com/ru/contact",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/contact",
+        "ru": "https://www.customwaistbag.com/ru/contact",
+        "x-default": "https://www.customwaistbag.com/contact"
+      },
+      "seo": {
+        "title": "Отправить запрос | Custom Waist Bag",
+        "description": "Анна Вэй проверит референс, количество и детали кастомизации.",
+        "h1": "Отправить запрос",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "350d0f533a54b276660deffef24243cc70b8e436249043600abb033ef0a1e718",
+        "bodyTextSha256": "3b0b2596061223f8bd660d2635e3919ab7969500d862095fba6f27a08b2cfda3"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "privacy-policy:en",
+      "path": "/privacy-policy",
+      "outputFile": "privacy-policy/index.html",
+      "locale": "en",
+      "pageType": "core",
+      "contentRef": "page:privacy-policy",
+      "canonical": "https://www.customwaistbag.com/privacy-policy",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/privacy-policy",
+        "ru": "https://www.customwaistbag.com/ru/privacy-policy",
+        "x-default": "https://www.customwaistbag.com/privacy-policy"
+      },
+      "seo": {
+        "title": "Privacy Policy | Custom Waist Bag",
+        "description": "How inquiry information is handled.",
+        "h1": "Privacy Policy",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "3599c67b8e7aacafe22326e62042896e20d9169921d1f13f6dbbd78df6c6f4e8",
+        "bodyTextSha256": "7651cf91a98f5c264304fcd607d01365ae4378f1034f884d716d6aa30ffdea4c"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "privacy-policy:ru",
+      "path": "/ru/privacy-policy",
+      "outputFile": "ru/privacy-policy/index.html",
+      "locale": "ru",
+      "pageType": "core",
+      "contentRef": "page:privacy-policy",
+      "canonical": "https://www.customwaistbag.com/ru/privacy-policy",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/privacy-policy",
+        "ru": "https://www.customwaistbag.com/ru/privacy-policy",
+        "x-default": "https://www.customwaistbag.com/privacy-policy"
+      },
+      "seo": {
+        "title": "Политика конфиденциальности | Custom Waist Bag",
+        "description": "Как используются данные, отправленные в запросе.",
+        "h1": "Политика конфиденциальности",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "ab2c588bd13e71bb755ec76c9bc76b80fddd69febd0d257a58ae87990547d211",
+        "bodyTextSha256": "1781519ba9032479edfe62582ba73cb7485a1b93fc6b0a12c65bdbcb3fa51ce0"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:en",
+      "path": "/resources",
+      "outputFile": "resources/index.html",
+      "locale": "en",
+      "pageType": "resource-index",
+      "contentRef": "hub:resources",
+      "canonical": "https://www.customwaistbag.com/resources",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources",
+        "ru": "https://www.customwaistbag.com/ru/resources",
+        "x-default": "https://www.customwaistbag.com/resources"
+      },
+      "seo": {
+        "title": "Buyer Resources",
+        "description": "Planning tools for custom waist bag MOQ, sizing, customization, sampling and production.",
+        "h1": "Buyer Resources",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "83550a882207749b022a0fce87fa495108e6e118c5c39be6f010286e1620c31a",
+        "bodyTextSha256": "549272b88d28aaee3bf8b7155f45beabba7f24e14b6d2400417306b5ef0f4fb2"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:ru",
+      "path": "/ru/resources",
+      "outputFile": "ru/resources/index.html",
+      "locale": "ru",
+      "pageType": "resource-index",
+      "contentRef": "hub:resources",
+      "canonical": "https://www.customwaistbag.com/ru/resources",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources",
+        "ru": "https://www.customwaistbag.com/ru/resources",
+        "x-default": "https://www.customwaistbag.com/resources"
+      },
+      "seo": {
+        "title": "Ресурсы для покупателей",
+        "description": "Материалы по MOQ, размерам, брендингу, образцам и производству поясных сумок.",
+        "h1": "Ресурсы для покупателей",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "e26af1284ef3fe8efe3f76544e3e1745f0573cf068b2e29489e31d29ae317bbf",
+        "bodyTextSha256": "967f37ce60cc5d1d76560f97e203780fcb637fa92b92ac6d07d65ea597bcfe57"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:en",
+      "path": "/running-waist-bags",
+      "outputFile": "running-waist-bags/index.html",
+      "locale": "en",
+      "pageType": "category",
+      "contentRef": "category:running-waist-bags",
+      "canonical": "https://www.customwaistbag.com/running-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags"
+      },
+      "seo": {
+        "title": "Running & Slim Waist Belts | Custom Waist Bag",
+        "description": "Ultra-slim elastic belts and lightweight running waist bags built to stay comfortable while you move. Lycra and water-resistant fabric constructions, reflective detailing for low-light runs, and options from close-fitting essentials storage to larger daily capacity. Made for running, gym, yoga and everyday active wear — fully open to your logo and colors.",
+        "h1": "Running & Slim Waist Belts",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "806ee6f6114f4cfcf8d33ccde8c25def62acfde2d0b0791c4e0d915262935477",
+        "bodyTextSha256": "d463626f74af25bb659d1a126a4323ce2ff434a62751445c0bcd649e7e1d1bb2"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ru",
+      "path": "/ru/running-waist-bags",
+      "outputFile": "ru/running-waist-bags/index.html",
+      "locale": "ru",
+      "pageType": "category",
+      "contentRef": "category:running-waist-bags",
+      "canonical": "https://www.customwaistbag.com/ru/running-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags"
+      },
+      "seo": {
+        "title": "Беговые поясные сумки и тонкие беговые ремни | Custom Waist Bag",
+        "description": "Тонкие эластичные ремни и легкие беговые поясные сумки остаются удобными во время движения. Доступны конструкции из лайкры и водостойкой ткани, светоотражающие элементы и варианты вместимости от компактного хранения необходимого до увеличенного объема на каждый день. Подходят для бега, фитнеса, йоги и повседневной активности; логотип и цвета можно настроить под ваш бренд.",
+        "h1": "Беговые поясные сумки и тонкие беговые ремни",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "18a497787d4fc468c737cff6c627fcd53b84aabe233d896e3a9c79671516b5fa",
+        "bodyTextSha256": "20ed2b4d830e0c59ddcb52eab09625d60295ee0926dd0e1ec9fdd59bba4e8531"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:en",
+      "path": "/everyday-waist-bags",
+      "outputFile": "everyday-waist-bags/index.html",
+      "locale": "en",
+      "pageType": "category",
+      "contentRef": "category:everyday-waist-bags",
+      "canonical": "https://www.customwaistbag.com/everyday-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags"
+      },
+      "seo": {
+        "title": "Everyday Waist Bags | Custom Waist Bag",
+        "description": "Classic structured waist bags for daily carry, travel and commuting. Durable nylon and water-resistant Oxford builds, multiple zip pockets, adjustable straps and clean surfaces made for your brand. The versatile everyday shape that buyers keep reordering.",
+        "h1": "Everyday Waist Bags",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "1ab9b308fbc015f19e43b0bfc0f3f3b2bfeb6bee9209d543a5e71f134e393ded",
+        "bodyTextSha256": "3c1e3fb29c3ce4810e2b6acf64649460e8ff18ee872aa49da70c8b85498ebe38"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:ru",
+      "path": "/ru/everyday-waist-bags",
+      "outputFile": "ru/everyday-waist-bags/index.html",
+      "locale": "ru",
+      "pageType": "category",
+      "contentRef": "category:everyday-waist-bags",
+      "canonical": "https://www.customwaistbag.com/ru/everyday-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags"
+      },
+      "seo": {
+        "title": "Повседневные поясные сумки | Custom Waist Bag",
+        "description": "Классические поясные сумки для ежедневного использования, поездок и города. Прочный нейлон и водостойкая ткань Oxford, несколько карманов на молнии, регулируемые ремни и чистые поверхности для нанесения вашего бренда.",
+        "h1": "Повседневные поясные сумки",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "e9d0088e221fe4be4c2b7732a6e16a8f28c50ea0c4797f620d5678981d4a1824",
+        "bodyTextSha256": "02754f21836ffd35aa8934312fb711c2f21b56a77deca06bd83a67ac2ebcad16"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:en",
+      "path": "/crossbody-waist-bags",
+      "outputFile": "crossbody-waist-bags/index.html",
+      "locale": "en",
+      "pageType": "category",
+      "contentRef": "category:crossbody-waist-bags",
+      "canonical": "https://www.customwaistbag.com/crossbody-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags"
+      },
+      "seo": {
+        "title": "Crossbody & Anti-Theft Waist Bags | Custom Waist Bag",
+        "description": "Larger Oxford waist bags that wear three ways — waist, crossbody or chest — with rear anti-theft pockets and water-resistant fabric. Built for city carry, travel and hands-free days when you need more room and more security.",
+        "h1": "Crossbody & Anti-Theft Waist Bags",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "64b739792a8bb7bdf0e38612f7f9434542f227453d816fc3ac5ae3af62ec7419",
+        "bodyTextSha256": "48ec662df69ad4018e00ad08dc9cd42a652fc10e725b5f008129aba25e29a6de"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:ru",
+      "path": "/ru/crossbody-waist-bags",
+      "outputFile": "ru/crossbody-waist-bags/index.html",
+      "locale": "ru",
+      "pageType": "category",
+      "contentRef": "category:crossbody-waist-bags",
+      "canonical": "https://www.customwaistbag.com/ru/crossbody-waist-bags",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags"
+      },
+      "seo": {
+        "title": "Поясные сумки кросс-боди и с защитой от кражи | Custom Waist Bag",
+        "description": "Вместительные модели из ткани Oxford можно носить на поясе, через плечо или на груди. Задние скрытые карманы и водостойкий материал делают их удобными для города, путешествий и активного дня.",
+        "h1": "Поясные сумки кросс-боди и с защитой от кражи",
+        "schemaTypes": [
+          "CollectionPage",
+          "ItemList",
+          "ListItem"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "efd5f092981959ca27d61f2c8cde4a6632c3cf58fcca4fb282cebf2d0f8ac5a3",
+        "bodyTextSha256": "91a349975b4399190b15c7b66e59944ed6444455da296ca4ec5da08f4e961665"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl1923-slim-running-waist-bag:en",
+      "path": "/running-waist-bags/ydjl1923-slim-running-waist-bag",
+      "outputFile": "running-waist-bags/ydjl1923-slim-running-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL1923",
+      "canonical": "https://www.customwaistbag.com/running-waist-bags/ydjl1923-slim-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl1923-slim-running-waist-bag"
+      },
+      "seo": {
+        "title": "Slim Running Waist Bag — YDJL1923 | Custom Waist Bag",
+        "description": "An ultra-slim elastic running belt that sits flat against your waist and stays put while you move. The Lycra body with a TPU inner layer keeps your phone, keys and cards secure and sweat-protected — built for runners who want to carry less and move more.",
+        "h1": "Slim Running Waist Bag — YDJL1923",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "71ac9b18c6f424c9aff9f6ca30088beaa5b0d7e294ac415afe3e3f98593581ec",
+        "bodyTextSha256": "defef7ee5e417f50df89841f6a49bce8aadcb1e271300a558850c498645fe0b2"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl1923-slim-running-waist-bag:ru",
+      "path": "/ru/running-waist-bags/ydjl1923-slim-running-waist-bag",
+      "outputFile": "ru/running-waist-bags/ydjl1923-slim-running-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL1923",
+      "canonical": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl1923-slim-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl1923-slim-running-waist-bag"
+      },
+      "seo": {
+        "title": "Тонкая беговая поясная сумка — YDJL1923 | Custom Waist Bag",
+        "description": "Ультратонкий эластичный беговой ремень плотно прилегает к талии и остается на месте во время движения. Корпус из лайкры с внутренним слоем TPU защищает телефон, ключи и карты от пота — для тех, кто хочет двигаться свободнее.",
+        "h1": "Тонкая беговая поясная сумка — YDJL1923",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "96ceb738aa4540d85bc74a564c349a04e80478230d23991c8caefe53f81a4adf",
+        "bodyTextSha256": "8812eb888094aa278ed183fefbe58c1a350297dd7d3d44550f100956ffa604e5"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2025-sports-running-waist-bag:en",
+      "path": "/running-waist-bags/ydjl2025-sports-running-waist-bag",
+      "outputFile": "running-waist-bags/ydjl2025-sports-running-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2025",
+      "canonical": "https://www.customwaistbag.com/running-waist-bags/ydjl2025-sports-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2025-sports-running-waist-bag"
+      },
+      "seo": {
+        "title": "Sports Running Waist Bag — YDJL2025 | Custom Waist Bag",
+        "description": "A slim, waterproof running belt with a breathable mesh back panel and dual-zip compartments that keep your essentials dry and organized. At just 0.09 kg it stays comfortable across long runs, with a reflective strip and earphone port for music on the move.",
+        "h1": "Sports Running Waist Bag — YDJL2025",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "d88d611605aea06c007111e90c3abaef321a3e70ecf5c73f360683502b7a18ab",
+        "bodyTextSha256": "1a48e82063dd921cdb65784589a65f1e2594110ef4daba8ad6f6d7f2fde5fc99"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2025-sports-running-waist-bag:ru",
+      "path": "/ru/running-waist-bags/ydjl2025-sports-running-waist-bag",
+      "outputFile": "ru/running-waist-bags/ydjl2025-sports-running-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2025",
+      "canonical": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2025-sports-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2025-sports-running-waist-bag"
+      },
+      "seo": {
+        "title": "Спортивная беговая поясная сумка — YDJL2025 | Custom Waist Bag",
+        "description": "Тонкий водостойкий беговой ремень с дышащей сетчатой спинкой и двумя отделениями на молнии сохраняет вещи сухими и организованными. Вес 0,09 кг, светоотражающая полоса и отверстие для наушников делают модель удобной для долгих пробежек.",
+        "h1": "Спортивная беговая поясная сумка — YDJL2025",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "5c97c720aafc8173e988aa32f532f27a047fbdfb1b08a78f71974f807933f569",
+        "bodyTextSha256": "50c307fe8190733f8bd497301d34c8bbed78368d97255ad8504a12f27ff5770c"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2023-running-waist-bag:en",
+      "path": "/running-waist-bags/ydjl2023-running-waist-bag",
+      "outputFile": "running-waist-bags/ydjl2023-running-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2023",
+      "canonical": "https://www.customwaistbag.com/running-waist-bags/ydjl2023-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2023-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2023-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2023-running-waist-bag"
+      },
+      "seo": {
+        "title": "Running Waist Bag — YDJL2023 | Custom Waist Bag",
+        "description": "A lightweight sports belt bag in water-resistant Oxford, shaped to stay hands-free and secure while you stay active all day. A breathable mesh back and adjustable buckle give a comfortable, stay-put fit for running, walking, gym and travel.",
+        "h1": "Running Waist Bag — YDJL2023",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "88d3c98ab8301451d496080c1c373b3ce637a5aefc9e882de3744f45a70221c5",
+        "bodyTextSha256": "b0851660da75be8ea7e0f74a21dccbd57d5954d5440feb32b2654abed180c289"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2023-running-waist-bag:ru",
+      "path": "/ru/running-waist-bags/ydjl2023-running-waist-bag",
+      "outputFile": "ru/running-waist-bags/ydjl2023-running-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2023",
+      "canonical": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2023-running-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2023-running-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2023-running-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2023-running-waist-bag"
+      },
+      "seo": {
+        "title": "Беговая поясная сумка — YDJL2023 | Custom Waist Bag",
+        "description": "Легкая спортивная поясная сумка из водостойкой ткани Oxford освобождает руки и надежно хранит вещи в течение активного дня. Дышащая сетчатая спинка и регулируемая пряжка обеспечивают комфортную посадку для бега, прогулок, фитнеса и путешествий.",
+        "h1": "Беговая поясная сумка — YDJL2023",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "16bf487473b85ebad350a3fb917f66f38e9b5da431674ba9be85e0aad2ea9663",
+        "bodyTextSha256": "a77be5d7265cf88fe303f2a3bfe8453f7f841dec5008303b91a2953b3c4fe873"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2035-sports-waist-bag:en",
+      "path": "/running-waist-bags/ydjl2035-sports-waist-bag",
+      "outputFile": "running-waist-bags/ydjl2035-sports-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2035",
+      "canonical": "https://www.customwaistbag.com/running-waist-bags/ydjl2035-sports-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2035-sports-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2035-sports-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2035-sports-waist-bag"
+      },
+      "seo": {
+        "title": "Sports Waist Bag — YDJL2035 | Custom Waist Bag",
+        "description": "A lightweight, water-resistant running waist bag built for movement. A spacious main compartment carries your phone, wallet, keys, power bank, cards and earbuds, while a honeycomb mesh back panel reduces sweat for all-day comfort. At just 0.09 kg, with a reflective strip, a built-in earphone port and an elastic strap that fits a wide range of waists, it keeps your essentials secure and within reach — running, cycling, hiking, gym or dog walking.",
+        "h1": "Sports Waist Bag — YDJL2035",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "5f7134e9b1a99f9c8b238df34dbc540a45871bfb3f8d1ded812093963b6f3f8c",
+        "bodyTextSha256": "676719ee9b79b6f9e5fcd52ead5433ce456142a94975df1effbd34ce1393de28"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "running-waist-bags:ydjl2035-sports-waist-bag:ru",
+      "path": "/ru/running-waist-bags/ydjl2035-sports-waist-bag",
+      "outputFile": "ru/running-waist-bags/ydjl2035-sports-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2035",
+      "canonical": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2035-sports-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/running-waist-bags/ydjl2035-sports-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/running-waist-bags/ydjl2035-sports-waist-bag",
+        "x-default": "https://www.customwaistbag.com/running-waist-bags/ydjl2035-sports-waist-bag"
+      },
+      "seo": {
+        "title": "Спортивная поясная сумка — YDJL2035 | Custom Waist Bag",
+        "description": "Легкая водостойкая поясная сумка для движения. В просторное основное отделение помещаются телефон, кошелек, ключи, пауэрбанк, карты и наушники, а задняя панель из дышащей сотовой сетки уменьшает потоотделение и сохраняет комфорт в течение дня. При весе около 0,09 кг модель оснащена светоотражающей полосой, встроенным отверстием для наушников и эластичным ремнем с широким диапазоном регулировки. Подходит для бега, велосипеда, походов, тренажерного зала и прогулок с собакой.",
+        "h1": "Спортивная поясная сумка — YDJL2035",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "7c76f25bbc5d2c70a9a3abbd7dbb7c0058f9fc89d425bddf09c393b561cfe2e7",
+        "bodyTextSha256": "477aae0f219dac4287b4307e2cc476eaa67be51b2228b5caa11796ec8689d146"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:ydjl2017-nylon-waist-bag:en",
+      "path": "/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+      "outputFile": "everyday-waist-bags/ydjl2017-nylon-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2017",
+      "canonical": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2017-nylon-waist-bag"
+      },
+      "seo": {
+        "title": "Nylon Waist Bag — YDJL2017 | Custom Waist Bag",
+        "description": "A classic structured waist bag in durable nylon with smart, everyday details. A roomy main compartment plus a secure back zipper pocket carries your daily essentials, while the adjustable strap and side-release buckle keep it comfortable for daily wear, travel and outdoor use.",
+        "h1": "Nylon Waist Bag — YDJL2017",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "0b048c3f8d99c0307b84ca170265134d0a22451a0546bf18554fd9e90a015500",
+        "bodyTextSha256": "d75a2b6ba17fb9ffc5d353e59d03dc940d0a4e7347f08e4f9301d26c8b5a300a"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:ydjl2017-nylon-waist-bag:ru",
+      "path": "/ru/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+      "outputFile": "ru/everyday-waist-bags/ydjl2017-nylon-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2017",
+      "canonical": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2017-nylon-waist-bag"
+      },
+      "seo": {
+        "title": "Нейлоновая поясная сумка — YDJL2017 | Custom Waist Bag",
+        "description": "Классическая поясная сумка из прочного нейлона с продуманными повседневными деталями. Вместительное основное отделение и защищенный задний карман на молнии вмещают необходимые вещи, а регулируемый ремень и боковая пряжка обеспечивают комфорт в городе, поездках и на отдыхе.",
+        "h1": "Нейлоновая поясная сумка — YDJL2017",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "10aee4c7fc38308506c4822717d440a34111d3923fd9bf5a5ca5478405ffbba3",
+        "bodyTextSha256": "2ef363169de7f4f194ef927236c51caed17c4c586023c80fe41457f2784c6d23"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:ydjl2024-sport-waist-bag:en",
+      "path": "/everyday-waist-bags/ydjl2024-sport-waist-bag",
+      "outputFile": "everyday-waist-bags/ydjl2024-sport-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2024",
+      "canonical": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2024-sport-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2024-sport-waist-bag"
+      },
+      "seo": {
+        "title": "Sport Waist Bag — YDJL2024 | Custom Waist Bag",
+        "description": "A compact dual-zip sport waist bag in water-resistant Oxford, sized to stay out of the way while keeping your essentials neatly separated. Scratch-resistant, lightweight and durable, with a strong buckle and smooth zipper pulls for running, walking, travel and daily use.",
+        "h1": "Sport Waist Bag — YDJL2024",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "a4e093701774b27320f647390921b20e94f99085d37217ca0ebde0a3a6ec3f13",
+        "bodyTextSha256": "961f6183331a9679352d14ddc5399ee098cfd72c775b172d7831ec1547d63734"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "everyday-waist-bags:ydjl2024-sport-waist-bag:ru",
+      "path": "/ru/everyday-waist-bags/ydjl2024-sport-waist-bag",
+      "outputFile": "ru/everyday-waist-bags/ydjl2024-sport-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2024",
+      "canonical": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2024-sport-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "x-default": "https://www.customwaistbag.com/everyday-waist-bags/ydjl2024-sport-waist-bag"
+      },
+      "seo": {
+        "title": "Спортивная поясная сумка — YDJL2024 | Custom Waist Bag",
+        "description": "Компактная спортивная поясная сумка из водостойкой ткани Oxford с двумя карманами на молнии помогает аккуратно разделить необходимые вещи. Легкая, прочная и устойчивая к царапинам модель оснащена надежной пряжкой и удобными пуллерами.",
+        "h1": "Спортивная поясная сумка — YDJL2024",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "a0d162c025eac277413051dc968a1bfbd27d2d04c97cd4445ab56d88bef0e52f",
+        "bodyTextSha256": "306a638c53858f6768d7eddbb0f2e2f33aa4c4db3f3c8238eae2a9c194d4a911"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:ydjl2315-anti-theft-sport-waist-bag:en",
+      "path": "/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+      "outputFile": "crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2315",
+      "canonical": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag"
+      },
+      "seo": {
+        "title": "Anti-Theft Sport Waist Bag — YDJL2315 | Custom Waist Bag",
+        "description": "A larger water-resistant Oxford waist bag with a hidden rear anti-theft pocket that keeps your phone and valuables safe against your body. Wear it at the waist, crossbody or across the chest — with a reflective strip for night safety, an earphone hole and a spacious organized main compartment.",
+        "h1": "Anti-Theft Sport Waist Bag — YDJL2315",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "3905eecbd0e79644409da8aab86178f36f4a26ae77ad39e260ba22f5d5cd9610",
+        "bodyTextSha256": "a143063fea1ca0fc1ae7ac98da4e2eb922db116d3e4f2f8aecb4f19a1423fb90"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:ydjl2315-anti-theft-sport-waist-bag:ru",
+      "path": "/ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+      "outputFile": "ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2315",
+      "canonical": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag"
+      },
+      "seo": {
+        "title": "Спортивная поясная сумка с защитой от кражи — YDJL2315 | Custom Waist Bag",
+        "description": "Вместительная поясная сумка из водостойкой ткани Oxford со скрытым задним карманом защищает телефон и ценные вещи рядом с телом. Ее можно носить на поясе, через плечо или на груди; светоотражающая полоса, отверстие для наушников и организованное основное отделение удобны в дороге.",
+        "h1": "Спортивная поясная сумка с защитой от кражи — YDJL2315",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "de04700b6c072f2a008f551b0d4f6ad58a62079809a0ef0d0b67ceab8dad0f7b",
+        "bodyTextSha256": "3c778e94081ba8f21d45191029a0bc4b9ae299744d869ca5c76d1e4eb54b19df"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:ydjl2317-waterproof-waist-bag:en",
+      "path": "/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+      "outputFile": "crossbody-waist-bags/ydjl2317-waterproof-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "product",
+      "contentRef": "product:YDJL2317",
+      "canonical": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2317-waterproof-waist-bag"
+      },
+      "seo": {
+        "title": "Waterproof Waist Bag — YDJL2317 | Custom Waist Bag",
+        "description": "A spacious water-resistant Oxford waist bag that carries three ways — waist, crossbody or chest. Roomy enough for a phone, wallet and a folding umbrella, with a front zipper pocket, a rear anti-theft pocket and an inner zip pocket to keep everyday essentials dry, secure and organized.",
+        "h1": "Waterproof Waist Bag — YDJL2317",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "b42aa44e706c731485ee288a407501d9301e1cf77752877b6fe6897fa5befef8",
+        "bodyTextSha256": "a3d0ccab51d2a05e0383579a4f915f9d8403c06b7063dbd2ecca6390fca115da"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "crossbody-waist-bags:ydjl2317-waterproof-waist-bag:ru",
+      "path": "/ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+      "outputFile": "ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag/index.html",
+      "locale": "ru",
+      "pageType": "product",
+      "contentRef": "product:YDJL2317",
+      "canonical": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+        "ru": "https://www.customwaistbag.com/ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+        "x-default": "https://www.customwaistbag.com/crossbody-waist-bags/ydjl2317-waterproof-waist-bag"
+      },
+      "seo": {
+        "title": "Водостойкая поясная сумка — YDJL2317 | Custom Waist Bag",
+        "description": "Вместительную поясную сумку из водостойкой ткани Oxford можно носить на поясе, через плечо или на груди. В нее помещаются телефон, кошелек и складной зонт; передний, задний скрытый и внутренний карманы на молнии сохраняют вещи сухими и организованными.",
+        "h1": "Водостойкая поясная сумка — YDJL2317",
+        "schemaTypes": [
+          "Product",
+          "Brand",
+          "Offer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "2bff04151b413ef0c872b1753e4f1aba492c0e92f33cb88e85562c3629ea07fa",
+        "bodyTextSha256": "4ec537e6193c34182ad19cd0d65019026f8c57599774fa1adc012e37da5a8cd3"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-moq-guide:en",
+      "path": "/resources/waist-bag-moq-guide",
+      "outputFile": "resources/waist-bag-moq-guide/index.html",
+      "locale": "en",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-moq-guide",
+      "canonical": "https://www.customwaistbag.com/resources/waist-bag-moq-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-moq-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-moq-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-moq-guide"
+      },
+      "seo": {
+        "title": "Waist Bag MOQ Guide — Minimum Order Quantities Explained",
+        "description": "How minimum order quantities work for custom waist bags: the tier structure, why MOQ changes with your spec, what drives cost, and how to plan a first order.",
+        "h1": "Waist Bag MOQ Guide: How Minimum Order Quantities Really Work",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "8cd00fb5fe84b51c3f0ead01e2f73e02eb9a45c5f5ada53fc2f7253e290b37c5",
+        "bodyTextSha256": "618055b5f8c246ad2e891786c8dee56d6ee7fdacdf69fc8992c2c5db66706a15"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-moq-guide:ru",
+      "path": "/ru/resources/waist-bag-moq-guide",
+      "outputFile": "ru/resources/waist-bag-moq-guide/index.html",
+      "locale": "ru",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-moq-guide",
+      "canonical": "https://www.customwaistbag.com/ru/resources/waist-bag-moq-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-moq-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-moq-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-moq-guide"
+      },
+      "seo": {
+        "title": "MOQ поясных сумок — руководство по минимальному заказу",
+        "description": "Как устроен MOQ для поясных сумок: уровни заказа, влияние спецификации и планирование первой партии.",
+        "h1": "MOQ поясных сумок: как на самом деле работает минимальный заказ",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "2afd14b16cc44f23fb26efa75c709292385ec3563ff9864df814cb99e91ae8f7",
+        "bodyTextSha256": "e5ddb238dc7fcae82bc5a977807ac4798410c4020adb64b6cdcde4541e2ef777"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-size-guide:en",
+      "path": "/resources/waist-bag-size-guide",
+      "outputFile": "resources/waist-bag-size-guide/index.html",
+      "locale": "en",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-size-guide",
+      "canonical": "https://www.customwaistbag.com/resources/waist-bag-size-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-size-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-size-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-size-guide"
+      },
+      "seo": {
+        "title": "Waist Bag Size Guide — Dimensions, Fit and Capacity",
+        "description": "Compare waist bag dimensions, fit and capacity for running belts, everyday waist bags and crossbody styles.",
+        "h1": "Waist Bag Size Guide: Choosing the Right Dimensions for Your Buyer",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "93a87183ea9e73735e82bcc694e9372748e63081dc5dc3da3bde1ed8b7fe2acf",
+        "bodyTextSha256": "cae3e1356f85e0a217f73ac9612a65a7a8eb517bf4152234ddc32d9079559b29"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-size-guide:ru",
+      "path": "/ru/resources/waist-bag-size-guide",
+      "outputFile": "ru/resources/waist-bag-size-guide/index.html",
+      "locale": "ru",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-size-guide",
+      "canonical": "https://www.customwaistbag.com/ru/resources/waist-bag-size-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-size-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-size-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-size-guide"
+      },
+      "seo": {
+        "title": "Размеры поясных сумок — посадка и вместимость",
+        "description": "Сравнение размеров, посадки и вместимости беговых, повседневных и crossbody поясных сумок.",
+        "h1": "Размеры поясных сумок: как выбрать подходящие габариты",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "ed7e9da73341bc75b9bb83c70a094151d6a8c603a03e84db0c9e97321c02f337",
+        "bodyTextSha256": "4f6706eea8e08863b9a65657755e7595c1f9205e35f49062106a54ec94bc6b4a"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-customization-guide:en",
+      "path": "/resources/waist-bag-customization-guide",
+      "outputFile": "resources/waist-bag-customization-guide/index.html",
+      "locale": "en",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-customization-guide",
+      "canonical": "https://www.customwaistbag.com/resources/waist-bag-customization-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-customization-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-customization-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-customization-guide"
+      },
+      "seo": {
+        "title": "Waist Bag Customization Guide — Logo and Branding Methods",
+        "description": "Compare logo, print, patch, label, hardware and color options for custom waist bags and private-label programs.",
+        "h1": "Waist Bag Customization Guide: Logo Methods, Fabrics and Finishing",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "fbc14f7521efa42a5a8a1a6b8e83e6144f4db620c9315f11d834b8ccca1ebb9e",
+        "bodyTextSha256": "cc68c0656bdecd09b2b82e937887f2d2cbe4535cd672da3121c4f207609cdeb6"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:waist-bag-customization-guide:ru",
+      "path": "/ru/resources/waist-bag-customization-guide",
+      "outputFile": "ru/resources/waist-bag-customization-guide/index.html",
+      "locale": "ru",
+      "pageType": "resource-page",
+      "contentRef": "resource:waist-bag-customization-guide",
+      "canonical": "https://www.customwaistbag.com/ru/resources/waist-bag-customization-guide",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/waist-bag-customization-guide",
+        "ru": "https://www.customwaistbag.com/ru/resources/waist-bag-customization-guide",
+        "x-default": "https://www.customwaistbag.com/resources/waist-bag-customization-guide"
+      },
+      "seo": {
+        "title": "Кастомизация поясных сумок — логотип и брендинг",
+        "description": "Сравнение печати, вышивки, патчей, этикеток, фурнитуры и цветов для поясных сумок private label.",
+        "h1": "Кастомизация поясных сумок: логотип, ткань и отделка",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "d192d7684e487af07c0131467f58d54b436b375fd6a649d547c59b2beb232e72",
+        "bodyTextSha256": "4b5040dee2ebc0b09040b95b46a5a50aac8a8189df522ccb6860b31af6c14a70"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:sampling-production-timeline:en",
+      "path": "/resources/sampling-production-timeline",
+      "outputFile": "resources/sampling-production-timeline/index.html",
+      "locale": "en",
+      "pageType": "resource-page",
+      "contentRef": "resource:sampling-production-timeline",
+      "canonical": "https://www.customwaistbag.com/resources/sampling-production-timeline",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/sampling-production-timeline",
+        "ru": "https://www.customwaistbag.com/ru/resources/sampling-production-timeline",
+        "x-default": "https://www.customwaistbag.com/resources/sampling-production-timeline"
+      },
+      "seo": {
+        "title": "Waist Bag Sampling & Production Timeline — What to Expect",
+        "description": "The full timeline for a custom waist bag order: sampling in 7–15 days, bulk production in 15–30 days, and what happens at each stage.",
+        "h1": "Sampling & Production Timeline: How a Custom Waist Bag Gets Made",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "0842667fd3be10a6bcb5cc407135cb8e6c9b8fa49ae3e8687de079296a180973",
+        "bodyTextSha256": "08479a1d0c26bcd09c55f208aeb47164cd1098a2f2ea6f58395664514f7efb84"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "resources:sampling-production-timeline:ru",
+      "path": "/ru/resources/sampling-production-timeline",
+      "outputFile": "ru/resources/sampling-production-timeline/index.html",
+      "locale": "ru",
+      "pageType": "resource-page",
+      "contentRef": "resource:sampling-production-timeline",
+      "canonical": "https://www.customwaistbag.com/ru/resources/sampling-production-timeline",
+      "alternates": {
+        "en": "https://www.customwaistbag.com/resources/sampling-production-timeline",
+        "ru": "https://www.customwaistbag.com/ru/resources/sampling-production-timeline",
+        "x-default": "https://www.customwaistbag.com/resources/sampling-production-timeline"
+      },
+      "seo": {
+        "title": "Сроки образца и производства поясных сумок",
+        "description": "Полный путь заказа: образец 7–15 дней, серийное производство 15–30 дней и этапы согласования.",
+        "h1": "Образец и производство: как создаётся поясная сумка на заказ",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "5bfc9f43ae077a35321501d1a6b80903a83904632ed2aa0b38fd2dd5d1bdfb8f",
+        "bodyTextSha256": "90656a375ee99fd5c15de27b64ea184b28936c2a6d282bb88bf7eb2d10ee15d2"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "blog:en",
+      "path": "/blog",
+      "outputFile": "blog/index.html",
+      "locale": "en",
+      "pageType": "blog-index",
+      "contentRef": "hub:blog",
+      "canonical": "https://www.customwaistbag.com/blog",
+      "alternates": {},
+      "seo": {
+        "title": "Custom Waist Bag Manufacturing Guides | Custom Waist Bag",
+        "description": "Practical sourcing guides for custom waist bags, materials, styles, branding and factory selection.",
+        "h1": "Custom Waist Bag Manufacturing Guides",
+        "schemaTypes": []
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "d4950335732c879a213a13231db78a88af7ccee471708108104cc858a57757bf",
+        "bodyTextSha256": "5fa4f656326ba4203c49ff67f74e457565a44530fe0890e50db222305fb64de8"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "blog:how-to-choose-custom-waist-bag-manufacturer:en",
+      "path": "/blog/how-to-choose-custom-waist-bag-manufacturer",
+      "outputFile": "blog/how-to-choose-custom-waist-bag-manufacturer/index.html",
+      "locale": "en",
+      "pageType": "blog-article",
+      "contentRef": "blog:how-to-choose-custom-waist-bag-manufacturer",
+      "canonical": "https://www.customwaistbag.com/blog/how-to-choose-custom-waist-bag-manufacturer",
+      "alternates": {},
+      "seo": {
+        "title": "How to Choose a Custom Waist Bag Manufacturer (B2B Buyer's Guide)",
+        "description": "A practical guide for importers and brands sourcing custom waist bags — how to vet a factory, set realistic MOQs, compare logo methods, and avoid common sampling mistakes.",
+        "h1": "How to Choose a Custom Waist Bag Manufacturer: A B2B Buyer's Guide",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "ea8b8bdbcd610dc3f1a998a0e54e99114100ebdacb1f553afe630cc92c420063",
+        "bodyTextSha256": "2c5bd7280eb7c5f048a4cb9adbd653b668dcd90f6ec3c9a0dcb56f4d29d7f007"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "blog:running-belt-vs-fanny-pack-vs-crossbody-waist-bag:en",
+      "path": "/blog/running-belt-vs-fanny-pack-vs-crossbody-waist-bag",
+      "outputFile": "blog/running-belt-vs-fanny-pack-vs-crossbody-waist-bag/index.html",
+      "locale": "en",
+      "pageType": "blog-article",
+      "contentRef": "blog:running-belt-vs-fanny-pack-vs-crossbody-waist-bag",
+      "canonical": "https://www.customwaistbag.com/blog/running-belt-vs-fanny-pack-vs-crossbody-waist-bag",
+      "alternates": {},
+      "seo": {
+        "title": "Running Belt vs Fanny Pack vs Crossbody Waist Bag: Which to Private-Label?",
+        "description": "Not sure which waist bag style to customize for your brand? Compare running belts, everyday fanny packs and crossbody waist bags by use case, buyer, fabric and customization potential.",
+        "h1": "Running Belt vs Fanny Pack vs Crossbody Waist Bag: Which Should You Private-Label?",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "639925977d2c2c80f50a9cc02c1f0c73c87d7bc32b6e49c15db1d4a91383afb4",
+        "bodyTextSha256": "fd683bdafb73b02f4dab5e9c014d5cea49fc72b12a067b923bcb922e7e669dc4"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    },
+    {
+      "id": "blog:custom-waist-bag-customization-guide:en",
+      "path": "/blog/custom-waist-bag-customization-guide",
+      "outputFile": "blog/custom-waist-bag-customization-guide/index.html",
+      "locale": "en",
+      "pageType": "blog-article",
+      "contentRef": "blog:custom-waist-bag-customization-guide",
+      "canonical": "https://www.customwaistbag.com/blog/custom-waist-bag-customization-guide",
+      "alternates": {},
+      "seo": {
+        "title": "Custom Waist Bag Guide: Logo Methods, Fabrics & MOQ Explained",
+        "description": "A practical breakdown of how to customize a waist bag — logo and branding methods, fabric choices, color matching, and how MOQ really works for private-label orders.",
+        "h1": "Custom Waist Bag Guide: Logo Methods, Fabrics and MOQ Explained",
+        "schemaTypes": [
+          "Article",
+          "Organization",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ]
+      },
+      "baseline": {
+        "status": 200,
+        "htmlSha256": "ff9e46fa663cb18b7ea3618dfbc9d2d12172deb87997a4296d6f9f38407eb1d7",
+        "bodyTextSha256": "51c82adb57e4adeff941bb0d4bf9f04bbb406fe58a505cca49a954eadcfee4ea"
+      },
+      "lifecycle": {
+        "status": "published-baseline",
+        "urlChangeRequiresHumanApproval": true
+      }
+    }
+  ]
+}

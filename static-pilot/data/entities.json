@@ -1,0 +1,494 @@
+{
+  "contractVersion": "1.0.0",
+  "entities": [
+    {
+      "id": "page:home",
+      "kind": "page",
+      "routes": [
+        "/",
+        "/ru"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:about",
+      "kind": "page",
+      "routes": [
+        "/about",
+        "/ru/about"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:factory",
+      "kind": "page",
+      "routes": [
+        "/factory",
+        "/ru/factory"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:custom-logo",
+      "kind": "page",
+      "routes": [
+        "/custom-logo",
+        "/ru/custom-logo"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:full-print",
+      "kind": "page",
+      "routes": [
+        "/full-print",
+        "/ru/full-print"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:oem-odm",
+      "kind": "page",
+      "routes": [
+        "/oem-odm",
+        "/ru/oem-odm"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:faq",
+      "kind": "page",
+      "routes": [
+        "/faq",
+        "/ru/faq"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:contact",
+      "kind": "page",
+      "routes": [
+        "/contact",
+        "/ru/contact"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "page:privacy-policy",
+      "kind": "page",
+      "routes": [
+        "/privacy-policy",
+        "/ru/privacy-policy"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "hub:resources",
+      "kind": "hub",
+      "routes": [
+        "/resources",
+        "/ru/resources"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "category:running-waist-bags",
+      "kind": "category",
+      "routes": [
+        "/running-waist-bags",
+        "/ru/running-waist-bags"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "category:everyday-waist-bags",
+      "kind": "category",
+      "routes": [
+        "/everyday-waist-bags",
+        "/ru/everyday-waist-bags"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "category:crossbody-waist-bags",
+      "kind": "category",
+      "routes": [
+        "/crossbody-waist-bags",
+        "/ru/crossbody-waist-bags"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL1923",
+      "kind": "product",
+      "routes": [
+        "/running-waist-bags/ydjl1923-slim-running-waist-bag",
+        "/ru/running-waist-bags/ydjl1923-slim-running-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2025",
+      "kind": "product",
+      "routes": [
+        "/running-waist-bags/ydjl2025-sports-running-waist-bag",
+        "/ru/running-waist-bags/ydjl2025-sports-running-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2023",
+      "kind": "product",
+      "routes": [
+        "/running-waist-bags/ydjl2023-running-waist-bag",
+        "/ru/running-waist-bags/ydjl2023-running-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2035",
+      "kind": "product",
+      "routes": [
+        "/running-waist-bags/ydjl2035-sports-waist-bag",
+        "/ru/running-waist-bags/ydjl2035-sports-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2017",
+      "kind": "product",
+      "routes": [
+        "/everyday-waist-bags/ydjl2017-nylon-waist-bag",
+        "/ru/everyday-waist-bags/ydjl2017-nylon-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2024",
+      "kind": "product",
+      "routes": [
+        "/everyday-waist-bags/ydjl2024-sport-waist-bag",
+        "/ru/everyday-waist-bags/ydjl2024-sport-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2315",
+      "kind": "product",
+      "routes": [
+        "/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag",
+        "/ru/crossbody-waist-bags/ydjl2315-anti-theft-sport-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "product:YDJL2317",
+      "kind": "product",
+      "routes": [
+        "/crossbody-waist-bags/ydjl2317-waterproof-waist-bag",
+        "/ru/crossbody-waist-bags/ydjl2317-waterproof-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "resource:waist-bag-moq-guide",
+      "kind": "resource",
+      "routes": [
+        "/resources/waist-bag-moq-guide",
+        "/ru/resources/waist-bag-moq-guide"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "resource:waist-bag-size-guide",
+      "kind": "resource",
+      "routes": [
+        "/resources/waist-bag-size-guide",
+        "/ru/resources/waist-bag-size-guide"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "resource:waist-bag-customization-guide",
+      "kind": "resource",
+      "routes": [
+        "/resources/waist-bag-customization-guide",
+        "/ru/resources/waist-bag-customization-guide"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "resource:sampling-production-timeline",
+      "kind": "resource",
+      "routes": [
+        "/resources/sampling-production-timeline",
+        "/ru/resources/sampling-production-timeline"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "hub:blog",
+      "kind": "hub",
+      "routes": [
+        "/blog"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "blog:how-to-choose-custom-waist-bag-manufacturer",
+      "kind": "blog",
+      "routes": [
+        "/blog/how-to-choose-custom-waist-bag-manufacturer"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "blog:running-belt-vs-fanny-pack-vs-crossbody-waist-bag",
+      "kind": "blog",
+      "routes": [
+        "/blog/running-belt-vs-fanny-pack-vs-crossbody-waist-bag"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    },
+    {
+      "id": "blog:custom-waist-bag-customization-guide",
+      "kind": "blog",
+      "routes": [
+        "/blog/custom-waist-bag-customization-guide"
+      ],
+      "provenance": {
+        "source": "CWB Production baseline",
+        "productionCommit": "7b73675db9f94ac06602875f6970a7de191ee909",
+        "importedAs": "architecture-reference-only"
+      },
+      "review": {
+        "status": "approved-existing-production",
+        "newClaimsAllowed": false
+      }
+    }
+  ]
+}
